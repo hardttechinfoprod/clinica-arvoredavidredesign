@@ -80,48 +80,72 @@
          VERDES — espinha dorsal da identidade. forest-deep cirúrgico
          (máx. 3 seções/página). Do mais escuro ao detalhe.
          ════════════════════════════════════════════════════════ */
-      --forest-deep: #0E1F18;   /* Fundo escuro principal: hero, footer, 1 impacto */
-      --forest-mid: #1A3A2F;    /* Superfície escura elevada: drawer, jornada, avatares */
-      --forest-soft: #274D38;   /* Accent verde em títulos claros (em/italic) */
-      --moss: #3D6B52;          /* Hover states, bordas ativas */
-      --sage: #7A9E88;          /* Detalhe verde suave — nunca fundo de seção */
+      --forest-deep: #0E1F18;
+      /* Fundo escuro principal: hero, footer, 1 impacto */
+      --forest-mid: #1A3A2F;
+      /* Superfície escura elevada: drawer, jornada, avatares */
+      --forest-soft: #274D38;
+      /* Accent verde em títulos claros (em/italic) */
+      --moss: #3D6B52;
+      /* Hover states, bordas ativas */
+      --sage: #7A9E88;
+      /* Detalhe verde suave — nunca fundo de seção */
 
       /* ════════════════════════════════════════════════════════
          OURO — único acento quente. Sempre funcional, jamais decorativo.
          ════════════════════════════════════════════════════════ */
-      --gold: #B8924A;          /* CTA primário, números, italic do hero, links ativos */
-      --gold-light: #CBA85F;    /* Hover do gold — nunca como cor base */
-      --gold-dim: #846828;      /* CORRIGIDO de #93732F (falhava AA): 4.66:1 sobre canvas, 4.95:1 sobre canvas-light. Eyebrows/credenciais. */
-      --gold-rgb: 184, 146, 74; /* Para rgba(): bordas, glows, sombras quentes */
+      --gold: #B8924A;
+      /* CTA primário, números, italic do hero, links ativos */
+      --gold-light: #CBA85F;
+      /* Hover do gold — nunca como cor base */
+      --gold-dim: #846828;
+      /* CORRIGIDO de #93732F (falhava AA): 4.66:1 sobre canvas, 4.95:1 sobre canvas-light. Eyebrows/credenciais. */
+      --gold-rgb: 184, 146, 74;
+      /* Para rgba(): bordas, glows, sombras quentes */
 
       /* ════════════════════════════════════════════════════════
          SUPERFÍCIES — o "papel". Rampa com TOM MÉDIO (canvas-mid) que
          quebra o binário escuro/claro entre seções adjacentes.
          ════════════════════════════════════════════════════════ */
-      --canvas: #F4F1EB;            /* Fundo claro padrão — parchment quente */
-      --canvas-light: #FBF8F2;      /* Superfície elevada sobre canvas: cards, forms */
-      --canvas-mid: #D4CEBF;        /* Tom médio: ponte deep↔canvas / seção de respiro */
-      --surface-placeholder: #E5E5E7;  /* Placeholder de imagem antes de carregar */
-      --white: #FFFFFF;             /* Contraste máximo: localização, formulários */
+      --canvas: #F4F1EB;
+      /* Fundo claro padrão — parchment quente */
+      --canvas-light: #FBF8F2;
+      /* Superfície elevada sobre canvas: cards, forms */
+      --canvas-mid: #D4CEBF;
+      /* Tom médio: ponte deep↔canvas / seção de respiro */
+      --surface-placeholder: #E5E5E7;
+      /* Placeholder de imagem antes de carregar */
+      --white: #FFFFFF;
+      /* Contraste máximo: localização, formulários */
       /* canvas-cool (#F5F5F7) removido: cinza frio quebrava o calor da paleta. */
 
       /* ════════════════════════════════════════════════════════
          TEXTO — sobre fundos claros. Verificado p/ WCAG AA (4.5:1).
          ════════════════════════════════════════════════════════ */
-      --ink: #1C1916;       /* Títulos, alto contraste */
-      --ink-mid: #4A4540;   /* Corpo de leitura principal */
-      --ink-light: #6E6863; /* CORRIGIDO de #7A7470 → atinge AA sobre canvas */
-      --ink-ghost: #A8A4A0; /* Placeholder/terciário — nunca leitura */
+      --ink: #1C1916;
+      /* Títulos, alto contraste */
+      --ink-mid: #4A4540;
+      /* Corpo de leitura principal */
+      --ink-light: #6E6863;
+      /* CORRIGIDO de #7A7470 → atinge AA sobre canvas */
+      --ink-ghost: #A8A4A0;
+      /* Placeholder/terciário — nunca leitura */
 
       /* Texto sobre fundos escuros (forest-deep / forest-mid) */
-      --on-dark: rgba(255, 255, 255, 0.92);        /* Títulos sobre escuro */
-      --on-dark-body: rgba(255, 255, 255, 0.80);   /* Corpo sobre escuro */
-      --on-dark-muted: rgba(255, 255, 255, 0.66);  /* CORRIGIDO de 0.55 → sobe p/ AA */
-      --on-dark-ghost: rgba(255, 255, 255, 0.30);  /* Copyright/legal */
+      --on-dark: rgba(255, 255, 255, 0.92);
+      /* Títulos sobre escuro */
+      --on-dark-body: rgba(255, 255, 255, 0.80);
+      /* Corpo sobre escuro */
+      --on-dark-muted: rgba(255, 255, 255, 0.66);
+      /* CORRIGIDO de 0.55 → sobe p/ AA */
+      --on-dark-ghost: rgba(255, 255, 255, 0.30);
+      /* Copyright/legal */
 
       /* Bordas */
-      --border: rgba(22, 40, 32, 0.07);     /* Divisor padrão em fundo claro */
-      --border-mid: rgba(22, 40, 32, 0.13); /* Divisor com mais peso */
+      --border: rgba(22, 40, 32, 0.07);
+      /* Divisor padrão em fundo claro */
+      --border-mid: rgba(22, 40, 32, 0.13);
+      /* Divisor com mais peso */
 
       /* ════════════════════════════════════════════════════════
          TIPOGRAFIA — Fraunces (emoção) + Instrument Sans (âncora).
@@ -186,23 +210,34 @@
       --shadow-1: 0 8px 32px rgba(22, 40, 32, 0.07);
       --shadow-2: 0 20px 56px rgba(22, 40, 32, 0.10);
       --shadow-3: 0 40px 80px rgba(7, 13, 10, 0.22);
-      --shadow-warm-1: 0 8px 32px rgba(var(--gold-rgb), 0.10);   /* repouso em bege */
-      --shadow-warm-2: 0 20px 56px rgba(var(--gold-rgb), 0.16);  /* hover em bege */
-      --shadow-warm-3: 0 40px 80px rgba(147, 115, 47, 0.22);     /* elevação alta em bege */
+      --shadow-warm-1: 0 8px 32px rgba(var(--gold-rgb), 0.10);
+      /* repouso em bege */
+      --shadow-warm-2: 0 20px 56px rgba(var(--gold-rgb), 0.16);
+      /* hover em bege */
+      --shadow-warm-3: 0 40px 80px rgba(147, 115, 47, 0.22);
+      /* elevação alta em bege */
 
       /* ════════════════════════════════════════════════════════
          MOVIMENTO — easings + DURAÇÕES nomeadas por intenção.
          Regra: nada de conteúdo passa de --dur-slow, exceto --dur-cinematic.
          ════════════════════════════════════════════════════════ */
-      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);       /* desaceleração — maioria dos hovers */
-      --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);   /* transições de estado (nav, drawer) */
-      --ease-spring: cubic-bezier(0.165, 0.84, 0.44, 1); /* cards, Ken Burns, "peso" */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+      /* desaceleração — maioria dos hovers */
+      --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);
+      /* transições de estado (nav, drawer) */
+      --ease-spring: cubic-bezier(0.165, 0.84, 0.44, 1);
+      /* cards, Ken Burns, "peso" */
 
-      --dur-instant: 0.15s;   /* focus/active — feedback imediato */
-      --dur-fast: 0.22s;      /* hover de links e botões */
-      --dur-base: 0.35s;      /* cor, opacity, transições gerais */
-      --dur-slow: 0.5s;       /* reveal, transições de nav, read-ring */
-      --dur-cinematic: 14s;   /* Ken Burns / lifeline — APENAS */
+      --dur-instant: 0.15s;
+      /* focus/active — feedback imediato */
+      --dur-fast: 0.22s;
+      /* hover de links e botões */
+      --dur-base: 0.35s;
+      /* cor, opacity, transições gerais */
+      --dur-slow: 0.5s;
+      /* reveal, transições de nav, read-ring */
+      --dur-cinematic: 14s;
+      /* Ken Burns / lifeline — APENAS */
 
       /* ════════════════════════════════════════════════════════
          ORNAMENTO — tokenizado p/ ter critério. Lei de uso: máx. 2/página,
@@ -259,10 +294,12 @@
       align-items: center;
       gap: 16px;
       padding: 14px 18px;
-      background: rgba(22, 40, 32, 0.95); /* forest-deep translúcido */
+      background: rgba(22, 40, 32, 0.95);
+      /* forest-deep translúcido */
       backdrop-filter: blur(12px) saturate(180%);
       -webkit-backdrop-filter: blur(12px) saturate(180%);
-      border: 1px solid rgba(184, 146, 74, 0.2); /* Borda gold suave */
+      border: 1px solid rgba(184, 146, 74, 0.2);
+      /* Borda gold suave */
       border-radius: var(--r-md);
       box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
     }
@@ -274,7 +311,8 @@
     .lgpd-text {
       font-size: 11px;
       line-height: 1.45;
-      color: rgba(255, 255, 255, 0.85); /* on-dark-body */
+      color: rgba(255, 255, 255, 0.85);
+      /* on-dark-body */
       margin: 0;
     }
 
@@ -306,7 +344,8 @@
     }
 
     .lgpd-btn:hover {
-      background: rgba(184, 146, 74, 0.12); /* gold translúcido sutil */
+      background: rgba(184, 146, 74, 0.12);
+      /* gold translúcido sutil */
       border-color: var(--gold);
       color: var(--gold);
     }
@@ -443,10 +482,21 @@
       letter-spacing: -0.01em;
     }
 
-    .t-h1 { font-size: var(--t-h1); }
-    .t-h2 { font-size: var(--t-h2); }
-    .t-h3 { font-size: var(--t-h3); }
-    .t-h4 { font-size: var(--t-h4); }
+    .t-h1 {
+      font-size: var(--t-h1);
+    }
+
+    .t-h2 {
+      font-size: var(--t-h2);
+    }
+
+    .t-h3 {
+      font-size: var(--t-h3);
+    }
+
+    .t-h4 {
+      font-size: var(--t-h4);
+    }
 
     .t-lead {
       font-family: var(--sans);
@@ -476,10 +526,8 @@
        Pequeno índice tipográfico — "capítulo" — que dá ritmo sem virar formatação. */
     .section-index {
       display: inline-flex;
-      flex-wrap: wrap; /* Permite quebrar a frase longa graciosamente no mobile */
       align-items: baseline;
-      column-gap: var(--s2);
-      row-gap: 4px;
+      gap: var(--s2);
       font-family: var(--sans);
       font-size: 11px;
       font-weight: 600;
@@ -488,7 +536,9 @@
       color: var(--gold-dim);
     }
 
-    .section-index--light { color: var(--gold); }
+    .section-index--light {
+      color: var(--gold);
+    }
 
     .section-index b {
       font-family: var(--serif);
@@ -586,6 +636,7 @@
     /* Efeitos antigos do ícone removidos */
 
     @media (max-width: 1100px) {
+
       .lifeline,
       .read-ring {
         display: none;
@@ -762,11 +813,20 @@
       transform: translateX(0);
     }
 
-    .reveal-d1 { transition-delay: 0.06s; }
-    .reveal-d2 { transition-delay: 0.15s; }
-    .reveal-d3 { transition-delay: 0.24s; }
+    .reveal-d1 {
+      transition-delay: 0.06s;
+    }
+
+    .reveal-d2 {
+      transition-delay: 0.15s;
+    }
+
+    .reveal-d3 {
+      transition-delay: 0.24s;
+    }
 
     @media (prefers-reduced-motion: reduce) {
+
       .reveal,
       .reveal-slide {
         opacity: 1 !important;
@@ -816,8 +876,8 @@
       align-items: center;
       text-decoration: none;
       flex-shrink: 0;
-      /* Largura base da área que a logo ocupará no layout */
-      width: clamp(200px, 16vw, 260px);
+      /* Largura base da área que a logo ocupará no layout aumentada */
+      width: clamp(260px, 22vw, 360px);
       height: 52px;
       position: relative;
     }
@@ -828,28 +888,26 @@
       top: 50%;
       left: -5%;
       transform: translateY(-50%);
-      
+
       /* O tamanho agora é guiado 100% pela largura, ignorando altura */
       width: 110%;
       height: auto;
       max-height: none;
       display: block;
-      transition: filter 0.38s var(--ease-in-out);
-      
-      /* Para garantir contraste no hero escuro: força branco puro */
-      filter: brightness(0) invert(1);
+      transition: opacity 0.38s var(--ease-in-out);
+      /* Removido o filter para manter as cores originais da logo */
     }
 
     @media (max-width: 768px) {
       .nav-logo {
-        width: clamp(160px, 45vw, 210px);
+        width: clamp(200px, 55vw, 260px);
         height: 48px;
       }
     }
 
     #navbar.scrolled .nav-logo-img {
-      /* No scroll com fundo claro: força um tom escuro neutro (ink) */
-      filter: brightness(0) opacity(0.88);
+      /* Mantendo a transparência sutil sem alterar a cor original */
+      opacity: 0.95;
     }
 
     .nav-links {
@@ -1049,20 +1107,18 @@
       position: absolute;
       inset: 0;
       z-index: 2;
-      background: linear-gradient(
-        90deg,
-        rgba(14, 31, 24, 0.95) 0%,
-        rgba(14, 31, 24, 0.80) 35%,
-        rgba(14, 31, 24, 0.40) 65%,
-        rgba(14, 31, 24, 0) 100%
-      );
+      background: linear-gradient(90deg,
+          rgba(14, 31, 24, 0.95) 0%,
+          rgba(14, 31, 24, 0.80) 35%,
+          rgba(14, 31, 24, 0.40) 65%,
+          rgba(14, 31, 24, 0) 100%);
     }
 
     .hero-overlay::after {
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(14,31,24,0.4) 0%, transparent 15%, transparent 85%, rgba(14,31,24,0.6) 100%);
+      background: linear-gradient(180deg, rgba(14, 31, 24, 0.4) 0%, transparent 15%, transparent 85%, rgba(14, 31, 24, 0.6) 100%);
       pointer-events: none;
     }
 
@@ -1139,7 +1195,8 @@
       flex-wrap: wrap;
       gap: clamp(20px, 3vw, 40px);
       padding-top: var(--s5);
-      border-top: none; /* Mais orgânico, menos dashboard */
+      border-top: none;
+      /* Mais orgânico, menos dashboard */
     }
 
     .cred {
@@ -1203,17 +1260,19 @@
         content: '';
         position: absolute;
         inset: 0;
-        background: linear-gradient(180deg, rgba(14,31,24,0.95) 0%, rgba(14,31,24,0.7) 25%, transparent 60%);
+        background: linear-gradient(180deg, rgba(14, 31, 24, 0.95) 0%, rgba(14, 31, 24, 0.7) 25%, transparent 60%);
         pointer-events: none;
       }
 
-      .hero-bg-img { 
+      .hero-bg-img {
         object-position: 100% 100%;
         transform: scale(1.5);
         transform-origin: 100% 100%;
       }
 
-      .hero-title { margin-bottom: var(--s5); }
+      .hero-title {
+        margin-bottom: var(--s5);
+      }
 
       .hero-title .l1 {
         font-size: clamp(22px, 6.5vw, 28px);
@@ -1250,7 +1309,9 @@
         min-height: 52px;
       }
 
-      .hero-ctas .btn-editorial { padding-left: 2px; }
+      .hero-ctas .btn-editorial {
+        padding-left: 2px;
+      }
 
       /* Credenciais: coluna enxuta, cada item com tick ouro. Sem divisores verticais. */
       .hero-credentials {
@@ -1272,9 +1333,13 @@
         font-size: 12.5px;
       }
 
-      .cred::before { display: none; }
+      .cred::before {
+        display: none;
+      }
 
-      .hero-scroll { display: none; }
+      .hero-scroll {
+        display: none;
+      }
     }
 
     /* ══════════════════════════════════════════════════════
@@ -1283,7 +1348,8 @@
     .abertura {
       background: var(--forest-deep);
       padding: clamp(48px, 6vw, 80px) var(--section-x);
-      border-top: 1px solid rgba(255, 255, 255, 0.05); /* Separação sutil */
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      /* Separação sutil */
     }
 
     .abertura-inner {
@@ -1358,8 +1424,10 @@
         padding-left: 0;
         padding-top: var(--s5);
       }
-      
-      .stat-label { max-width: none; }
+
+      .stat-label {
+        max-width: none;
+      }
     }
 
     /* ══════════════════════════════════════════════════════
@@ -1389,7 +1457,8 @@
       aspect-ratio: 4/5;
       border-radius: var(--r-md);
       overflow: hidden;
-      box-shadow: var(--shadow-warm-1);   /* sobre canvas (bege) → sombra quente */
+      box-shadow: var(--shadow-warm-1);
+      /* sobre canvas (bege) → sombra quente */
       position: relative;
     }
 
@@ -1406,9 +1475,11 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      object-position: center 75%; /* Foca estritamente nas poltronas e chão */
+      object-position: center 75%;
+      /* Foca estritamente nas poltronas e chão */
       filter: saturate(0.92) sepia(0.04) contrast(1.02) brightness(0.96);
-      transform: scale(1.22); /* Zoom mais agressivo para cortar margens documentais */
+      transform: scale(1.22);
+      /* Zoom mais agressivo para cortar margens documentais */
       transition: transform 1.2s var(--ease-spring);
     }
 
@@ -1464,7 +1535,7 @@
     }
 
     /* Ponto-médio dourado entre credenciais (não antes da primeira). */
-    .sobre-creds span + span::before {
+    .sobre-creds span+span::before {
       content: '·';
       margin-right: var(--s4);
       color: var(--gold);
@@ -1478,7 +1549,8 @@
       }
 
       .sobre-visual {
-        order: 2; /* Imagem aparece depois da copy no mobile */
+        order: 2;
+        /* Imagem aparece depois da copy no mobile */
         max-width: 440px;
       }
 
@@ -1527,7 +1599,8 @@
       gap: clamp(24px, 5vw, 64px);
       align-items: start;
       padding: var(--s7) 0;
-      border-top: 1px solid rgba(26, 58, 47, 0.12); /* Mais sutil */
+      border-top: 1px solid rgba(26, 58, 47, 0.12);
+      /* Mais sutil */
     }
 
     .principio:last-child {
@@ -1539,18 +1612,21 @@
       font-size: clamp(56px, 8vw, 92px);
       font-weight: 300;
       line-height: 0.8;
-      color: rgba(26, 58, 47, 0.25); /* Contraste levemente melhorado */
+      color: rgba(26, 58, 47, 0.25);
+      /* Contraste levemente melhorado */
       letter-spacing: -0.03em;
       transition: color 0.45s var(--ease-out);
     }
 
     .principio:hover .principio-num {
-      color: rgba(184, 146, 74, 0.5); /* Sem dourado agressivo */
+      color: rgba(184, 146, 74, 0.5);
+      /* Sem dourado agressivo */
     }
 
     .principio-body {
       max-width: 540px;
-      margin-top: -6px; /* Alinha oticamente com o topo do número */
+      margin-top: -6px;
+      /* Alinha oticamente com o topo do número */
     }
 
     .principio-title {
@@ -1651,12 +1727,14 @@
     }
 
     .psy-portrait {
-      aspect-ratio: 4/5; /* Padronizado para ficar um pouco mais fechado/controlado */
+      aspect-ratio: 4/5;
+      /* Padronizado para ficar um pouco mais fechado/controlado */
       border-radius: var(--r-md);
       overflow: hidden;
       background: var(--canvas-light);
       box-shadow: var(--shadow-warm-1);
-      max-width: 420px; /* Impede que fotos muito grandes dominem a composição no desktop */
+      max-width: 420px;
+      /* Impede que fotos muito grandes dominem a composição no desktop */
       margin: 0 auto;
     }
 
@@ -1665,17 +1743,34 @@
       height: 100%;
       object-fit: cover;
       object-position: center 20%;
-      filter: saturate(0.85) contrast(1.05) brightness(0.98) sepia(0.08); /* Mais neutro/editorial */
+      filter: saturate(0.85) contrast(1.05) brightness(0.98) sepia(0.08);
+      /* Mais neutro/editorial */
       transition: transform 1.2s var(--ease-spring);
     }
-    
+
     /* Crops específicos para valorizar rostos e cortar fundos/luzes indesejados */
-    .img-isabella { object-position: center 15%; }
-    .img-denise { object-position: center 25%; }
-    .img-juliana { object-position: center 20%; }
-    .img-livia { object-position: center 10%; transform: scale(1.05); } /* Corta mais teto se houver */
-    
-    .psy-profile:hover .psy-portrait .img-livia { transform: scale(1.09); }
+    .img-isabella {
+      object-position: center 15%;
+    }
+
+    .img-denise {
+      object-position: center 25%;
+    }
+
+    .img-juliana {
+      object-position: center 20%;
+    }
+
+    .img-livia {
+      object-position: center 10%;
+      transform: scale(1.05);
+    }
+
+    /* Corta mais teto se houver */
+
+    .psy-profile:hover .psy-portrait .img-livia {
+      transform: scale(1.09);
+    }
 
     .psy-profile:hover .psy-portrait img {
       transform: scale(1.04);
@@ -1685,7 +1780,7 @@
       max-width: 540px;
       position: relative;
     }
-    
+
     /* Linha editorial sutil unindo o perfil */
     .psy-content::before {
       content: '';
@@ -1700,7 +1795,7 @@
     .psy-profile:nth-child(even) .psy-content {
       margin-left: auto;
     }
-    
+
     .psy-profile:nth-child(even) .psy-content::before {
       left: auto;
       right: -40px;
@@ -1783,20 +1878,20 @@
         grid-template-columns: 1fr;
         gap: var(--s6);
       }
-      
+
       .psy-profile:nth-child(even) .psy-portrait {
         order: -1;
       }
-      
+
       .psy-profile:nth-child(even) .psy-content {
         margin-left: 0;
       }
-      
+
       .psy-content::before,
       .psy-profile:nth-child(even) .psy-content::before {
         display: none;
       }
-      
+
       .psy-portrait {
         max-width: 440px;
         aspect-ratio: 4/5;
@@ -1854,10 +1949,10 @@
       bottom: 12px;
       width: 1px;
       background: linear-gradient(to bottom,
-        transparent,
-        rgba(var(--gold-rgb), 0.45) 12%,
-        rgba(var(--gold-rgb), 0.45) 88%,
-        transparent);
+          transparent,
+          rgba(var(--gold-rgb), 0.45) 12%,
+          rgba(var(--gold-rgb), 0.45) 88%,
+          transparent);
     }
 
     .etapa {
@@ -1865,8 +1960,13 @@
       padding: var(--s7) 0;
     }
 
-    .etapa:first-child { padding-top: 0; }
-    .etapa:last-child { padding-bottom: 0; }
+    .etapa:first-child {
+      padding-top: 0;
+    }
+
+    .etapa:last-child {
+      padding-bottom: 0;
+    }
 
     /* Nó na linha + número romano-editorial sobreposto à esquerda. */
     .etapa-mark {
@@ -1878,7 +1978,9 @@
       justify-content: center;
     }
 
-    .etapa:first-child .etapa-mark { top: 0; }
+    .etapa:first-child .etapa-mark {
+      top: 0;
+    }
 
     .etapa-dot {
       width: 11px;
@@ -1931,31 +2033,31 @@
     }
 
     /* ══════════════════════════════════════════════════════
-   AMBIENTE / GALERIA — Editorial Assimétrico
+   AMBIENTE / GALERIA — abre com título largo (sem eyebrow)
 ══════════════════════════════════════════════════════ */
     .ambiente {
       background: var(--canvas-light);
       padding: var(--section-y) var(--section-x);
     }
 
-    .ambiente-inner {
-      max-width: var(--max-wide);
-      margin: 0 auto;
-    }
-
     .ambiente-header {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: end;
+      gap: var(--s6);
       margin-bottom: var(--s8);
-      max-width: 580px;
+      max-width: var(--max-wide);
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .ambiente-title {
       font-family: var(--serif);
-      font-size: clamp(32px, 4vw, 48px);
+      font-size: var(--t-h2);
       font-weight: 300;
-      line-height: 1.1;
-      color: var(--ink);
-      margin-bottom: var(--s4);
+      line-height: 1.08;
       letter-spacing: -0.01em;
+      color: var(--ink);
     }
 
     .ambiente-title em {
@@ -1968,131 +2070,119 @@
       font-size: var(--t-body);
       font-weight: 300;
       color: var(--ink-light);
+      max-width: 380px;
       line-height: 1.65;
     }
 
-    /* Galeria Editorial Assimétrica */
-    .editorial-grid {
+    .ambiente-gallery-grid {
       display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: var(--s5);
-      margin-bottom: clamp(60px, 8vw, 120px);
-      align-items: start;
-    }
-
-    .gallery-main, .gallery-side {
-      display: flex;
-      flex-direction: column;
-      gap: var(--s5);
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: 1fr;
+      gap: var(--s4);
+      max-width: var(--max-wide);
+      margin: 0 auto;
     }
 
     .gallery-cell {
       position: relative;
+      aspect-ratio: 3/2;
       border-radius: var(--r-md);
       overflow: hidden;
-      margin: 0;
+      border: 1px solid rgba(0, 0, 0, 0.04);
       cursor: pointer;
       background: var(--canvas);
-      /* Tratamento visual premium unificado */
-      box-shadow: 0 4px 24px rgba(0,0,0,0.03);
     }
 
-    /* main image (Sala de Estar) - aspecto quadrado contido para permitir zoom agressivo no móvel */
-    .gallery-main .gallery-cell {
-      height: auto;
-      aspect-ratio: 1/1;
+    .gallery-cell.destaque {
+      grid-column: span 2;
+      grid-row: span 2;
+      aspect-ratio: 6/4;
     }
 
-    /* side images (Terapia/Recepção) - proporção paisagem */
-    .gallery-side .gallery-cell {
-      aspect-ratio: 4/3;
+    .gallery-inner {
+      width: 100%;
+      height: 100%;
     }
 
-    .gallery-cell img {
+    .gallery-inner img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      /* Curadoria: Leve color grading para uniformidade (aquecer + desaturar + silenciar) */
-      filter: sepia(0.08) saturate(0.85) contrast(1.05) brightness(0.98);
-      transition: transform 0.6s var(--ease-out), filter 0.6s;
+      filter: saturate(0.9) contrast(1.03) brightness(1.02) sepia(0.06);
+      transition: transform 0.60s var(--ease-out);
     }
 
-    .gallery-cell:hover img {
-      transform: scale(1.03);
-      filter: sepia(0.05) saturate(0.95) contrast(1.05) brightness(1.02);
+    .gallery-cell:hover .gallery-inner img {
+      transform: scale(1.04);
     }
 
-    /* Crops extremos de curadoria: removendo AC, persianas, TV e focando em textura e luz */
-    .gc--estar img { 
-      object-position: 30% 80%; /* Foco no sofá/poltrona */
-      transform: scale(1.35); /* Zoom profundo para esconder bagunça lateral */
+    /* QA: crops por célula (antes inline). Cada object-position recorta o que
+       não é clínico (ar-condicionado, persiana, TV, plaquinhas). */
+    .gc--terapia img {
+      object-position: center 92%;
     }
-    .gc--estar:hover img { transform: scale(1.38); }
 
-    .gc--terapia img { 
-      object-position: center 60%; /* Foco na mesa/cadeira */
-      transform: scale(1.4); /* Esconde o teto, AC e luminárias excessivas */
+    .gc--estar img {
+      object-position: center 78%;
     }
-    .gc--terapia:hover img { transform: scale(1.43); }
 
     .gc--recepcao img {
-      object-position: center bottom;
-      transform: scale(1.25); /* Elimina o teto da recepção */
+      object-position: center 100%;
+      /* Zoom de enquadramento (substitui o hover-scale nesta célula): empurra o
+         quadro p/ baixo, tirando AC e plaquinhas. Mantido também no hover. */
+      transform: scale(1.18);
+      transform-origin: center bottom;
     }
-    .gc--recepcao:hover img { transform: scale(1.28); }
 
-    /* Legendas discretas */
+    .gc--recepcao:hover .gallery-inner img {
+      transform: scale(1.18);
+    }
+
     .gallery-caption {
       position: absolute;
       bottom: var(--s4);
       left: var(--s4);
-      padding: 5px 12px;
-      background: rgba(251, 248, 242, 0.95);
-      backdrop-filter: blur(8px);
+      padding: 6px 14px;
+      background: rgba(253, 251, 248, 0.82);
+      backdrop-filter: blur(10px) saturate(160%);
       border-radius: var(--r-pill);
       opacity: 0;
-      transform: translateY(4px);
-      transition: all 0.3s var(--ease-out);
+      transform: translateY(6px);
+      transition: all 0.30s var(--ease-out);
       pointer-events: none;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
-    .gallery-cell:hover .gallery-caption {
+    .gallery-cell:hover .gallery-caption,
+    .caes-cell:hover .gallery-caption {
       opacity: 1;
       transform: translateY(0);
     }
 
     .gallery-caption-text {
       font-family: var(--sans);
-      font-size: 10.5px;
-      font-weight: 500;
-      letter-spacing: 0.05em;
-      color: var(--ink-mid);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--forest-mid);
       text-transform: uppercase;
     }
 
-    /* Cães Terapeutas (Bloco detalhe, pequeno e afetivo) */
-    .caes-block {
+    /* Cães terapeutas */
+    .caes-header {
+      max-width: var(--max-wide);
+      margin: var(--s9) auto var(--s6);
       display: grid;
-      grid-template-columns: 1fr auto;
+      grid-template-columns: auto 1fr;
+      gap: clamp(20px, 4vw, 48px);
       align-items: center;
-      justify-content: space-between;
-      gap: clamp(30px, 4vw, 50px);
-      padding-top: var(--s7);
-      border-top: 1px solid rgba(0,0,0,0.06);
-    }
-
-    .caes-text {
-      max-width: 440px;
     }
 
     .caes-title {
       font-family: var(--serif);
-      font-size: clamp(24px, 3vw, 32px);
+      font-size: clamp(26px, 3vw, 34px);
       font-weight: 300;
       color: var(--ink);
-      line-height: 1.15;
-      margin-bottom: var(--s3);
+      line-height: 1.1;
     }
 
     .caes-title em {
@@ -2102,57 +2192,105 @@
 
     .caes-desc {
       font-family: var(--sans);
-      font-size: var(--t-body-sm);
+      font-size: var(--t-body);
       font-weight: 300;
       color: var(--ink-light);
       line-height: 1.65;
+      max-width: 460px;
     }
 
-    .caes-gallery {
+    .caes-strip {
       display: flex;
-      gap: var(--s3);
+      gap: var(--s4);
+      max-width: var(--max-wide);
+      margin: 0 auto;
+      justify-content: safe center;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: var(--s3);
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: thin;
     }
 
     .caes-cell {
-      width: 140px; /* Redução drástica: detalhe, não galeria principal */
-      height: 180px;
-      aspect-ratio: auto;
+      position: relative;
+      flex: 0 0 clamp(220px, 26%, 320px);
+      aspect-ratio: 4/5;
       border-radius: var(--r-md);
       overflow: hidden;
-      margin: 0;
+      border: 1px solid rgba(0, 0, 0, 0.04);
       cursor: pointer;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+      scroll-snap-align: start;
+      background: var(--canvas);
     }
 
     .caes-cell img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      /* Crop agressivo focado no rosto para não parecer "foto na sala" */
-      object-position: center 25%; 
-      transform: scale(1.4); 
-      filter: sepia(0.08) saturate(0.85) contrast(1.05) brightness(0.98);
-      transition: transform 0.6s var(--ease-out);
+      object-position: center 35%;
+      filter: saturate(0.9) contrast(1.03) brightness(1.02) sepia(0.06);
+      transition: transform 0.60s var(--ease-out);
     }
 
     .caes-cell:hover img {
-      transform: scale(1.45);
+      transform: scale(1.04);
     }
+
+    /* Indicador de scroll horizontal (galeria/cães no mobile). Oculto no desktop;
+       ativado nos @media. A seta "viaja" para sugerir o gesto de arraste. */
+    .scroll-hint {
+      display: none;
+      align-items: center;
+      gap: var(--s3);
+      max-width: var(--max-wide);
+      margin: var(--s4) auto 0;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .scroll-hint-track {
+      position: relative;
+      width: 40px;
+      height: 1px;
+      background: rgba(var(--gold-rgb), 0.30);
+      overflow: hidden;
+    }
+
+    .scroll-hint-track::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 14px;
       height: 1px;
       background: var(--gold);
       animation: hint-travel 1.8s var(--ease-in-out) infinite;
     }
 
     @keyframes hint-travel {
-      0% { transform: translateX(-14px); }
-      100% { transform: translateX(40px); }
+      0% {
+        transform: translateX(-14px);
+      }
+
+      100% {
+        transform: translateX(40px);
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
-      .scroll-hint-track::after { animation: none; left: 13px; }
+      .scroll-hint-track::after {
+        animation: none;
+        left: 13px;
+      }
     }
 
     @media (max-width: 760px) {
+
       .ambiente-header,
       .caes-header {
         grid-template-columns: 1fr;
@@ -2217,7 +2355,8 @@
 
     .dep-google-badge:hover {
       transform: translateY(-1px);
-      box-shadow: var(--shadow-warm-1);   /* sobre canvas (bege) → sombra quente */
+      box-shadow: var(--shadow-warm-1);
+      /* sobre canvas (bege) → sombra quente */
       border-color: rgba(var(--gold-rgb), 0.30);
     }
 
@@ -2407,7 +2546,7 @@
 
     .cta-form-header {
       background: var(--canvas);
-      padding: clamp(32px, 5vw, 40px) clamp(32px, 5vw, 48px);
+      padding: var(--s6);
       border-bottom: 1px solid var(--border);
     }
 
@@ -2429,11 +2568,11 @@
     }
 
     .cta-form-body {
-      padding: clamp(24px, 4vw, 32px) clamp(32px, 5vw, 48px) clamp(32px, 5vw, 40px);
+      padding: var(--s6);
     }
 
     .form-field {
-      margin-bottom: 28px;
+      margin-bottom: var(--s5);
     }
 
     /* Label como pergunta humana — não etiqueta fria. */
@@ -2530,23 +2669,14 @@
     .form-privacy {
       text-align: left;
       font-family: var(--sans);
-      font-size: 12.5px;
-      color: var(--ink-mid);
-      margin-top: 24px;
-      line-height: 1.6;
+      font-size: 11px;
+      color: var(--ink-light);
+      margin-top: var(--s4);
+      line-height: 1.55;
     }
 
     .form-privacy a {
       color: var(--gold-dim);
-      text-decoration: underline;
-      text-underline-offset: 3px;
-    }
-
-    /* Ocultamento contextual do WhatsApp quando o formulário estiver em foco (Hide Contextual Inteligente) */
-    body:has(.cta-form-wrap:focus-within) .wa-float {
-      opacity: 0;
-      pointer-events: none;
-      transform: translateY(15px);
     }
 
     @media (max-width: 900px) {
@@ -2656,8 +2786,13 @@
       transition: transform 0.25s var(--ease-out);
     }
 
-    .loc-icon-g { background: rgba(26, 58, 47, 0.07); }
-    .loc-icon-a { background: rgba(var(--gold-rgb), 0.10); }
+    .loc-icon-g {
+      background: rgba(26, 58, 47, 0.07);
+    }
+
+    .loc-icon-a {
+      background: rgba(var(--gold-rgb), 0.10);
+    }
 
     .loc-row:hover .loc-icon {
       transform: scale(1.08);
@@ -2986,8 +3121,13 @@
       color: var(--gold);
     }
 
-    .prev { left: 16px; }
-    .next { right: 16px; }
+    .prev {
+      left: 16px;
+    }
+
+    .next {
+      right: 16px;
+    }
 
     .lightbox-info {
       margin-top: var(--s4);
@@ -3041,7 +3181,8 @@
     }
 
     .wa-tooltip {
-      background: rgba(22, 40, 32, 0.95); /* forest-deep translúcido */
+      background: rgba(22, 40, 32, 0.95);
+      /* forest-deep translúcido */
       backdrop-filter: blur(8px);
       color: rgba(244, 241, 235, 0.90);
       font-family: var(--sans);
@@ -3095,9 +3236,17 @@
    RESPONSIVE — navbar
 ══════════════════════════════════════════════════════ */
     @media (max-width: 1024px) {
-      .nav-links { display: none; }
-      .nav-cta-wrap .btn-ghost { display: none; }
-      .nav-hamburger { display: flex; }
+      .nav-links {
+        display: none;
+      }
+
+      .nav-cta-wrap .btn-ghost {
+        display: none;
+      }
+
+      .nav-hamburger {
+        display: flex;
+      }
     }
 
     /* ════════════════════════════════════════════════════════════
@@ -3106,32 +3255,50 @@
        ════════════════════════════════════════════════════════════ */
     @media (max-width: 600px) {
 
-      /* ── AMBIENTE / GALERIA MOBILE ── 
-         Abolindo carrossel para uma composição vertical fluida. 
-         Fotos não podem ser gigantes (usamos aspect ratios contidos). */
-      .editorial-grid {
-        grid-template-columns: 1fr;
+      /* ── GALERIA como carrossel com afordância visível ──
+         Célula a 80vw deixa a próxima "espiando" (sinal de que há mais);
+         o .scroll-hint animado confirma o gesto. Sem máscara que escureça as fotos. */
+      .ambiente-gallery-grid {
+        display: flex;
         gap: var(--s4);
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-padding-left: var(--section-x);
+        padding-bottom: var(--s3);
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
       }
-      .gallery-main .gallery-cell {
-        aspect-ratio: 4/3; /* Aspecto controlado no celular para imagem não ficar gigante */
+
+      .ambiente-gallery-grid::-webkit-scrollbar {
+        display: none;
       }
-      .caes-block {
-        grid-template-columns: 1fr;
-        gap: var(--s5);
+
+      .gallery-cell {
+        flex: 0 0 80vw;
+        scroll-snap-align: start;
+        aspect-ratio: 4/3;
       }
-      .caes-gallery {
-        gap: var(--s3);
+
+      .gallery-cell.destaque {
+        grid-column: auto;
+        grid-row: auto;
+        aspect-ratio: 4/3;
       }
+
       .caes-cell {
-        width: 100%; /* No mobile eles voltam a dividir a largura */
-        flex: 1;
-        height: auto;
-        aspect-ratio: 1/1; /* Quadradas no mobile para não dominar a tela */
+        flex: 0 0 62vw;
       }
-      .gallery-caption {
-        opacity: 1; /* Legenda sempre visível no touch */
-        transform: translateY(0);
+
+      /* Mostra os indicadores de scroll (galeria + cães). */
+      .scroll-hint {
+        display: flex;
+      }
+
+      /* Legenda da galeria sempre visível no touch (sem hover). */
+      .gallery-caption,
+      .caes-cell .gallery-caption {
+        opacity: 1;
+        transform: none;
       }
 
       /* ── EQUIPE: card compacto — foto menor, texto mais denso (ritmo). ── */
@@ -3140,42 +3307,106 @@
         max-height: 340px;
       }
 
-      .psy-portrait img { object-position: center 20%; }
+      .psy-portrait img {
+        object-position: center 20%;
+      }
 
-      .psy-body { padding: var(--s4) 0 0; }
-      .psy-quote { font-size: 16px; line-height: 1.5; margin-bottom: var(--s3); }
-      .psy-spec { font-size: 14px; margin-bottom: var(--s3); }
-      .psy-tags { margin-bottom: var(--s4); }
+      .psy-body {
+        padding: var(--s4) 0 0;
+      }
+
+      .psy-quote {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: var(--s3);
+      }
+
+      .psy-spec {
+        font-size: 14px;
+        margin-bottom: var(--s3);
+      }
+
+      .psy-tags {
+        margin-bottom: var(--s4);
+      }
 
       /* ── JORNADA: timeline mais justa, linha mais perto do texto. ── */
-      .jornada-track { padding-left: 38px; }
-      .etapa-mark { left: -38px; width: 24px; }
-      .etapa { padding: var(--s6) 0; }
-      .jornada-headline { font-size: clamp(26px, 7.5vw, 34px); }
-      .jornada-close { padding-left: 38px; margin-bottom: 40px; } /* Respiro para não disputar espaço com WhatsApp */
+      .jornada-track {
+        padding-left: 38px;
+      }
+
+      .etapa-mark {
+        left: -38px;
+        width: 24px;
+      }
+
+      .etapa {
+        padding: var(--s6) 0;
+      }
+
+      .jornada-headline {
+        font-size: clamp(26px, 7.5vw, 34px);
+      }
+
+      .jornada-close {
+        padding-left: 38px;
+      }
 
       /* ── DEPOIMENTOS: coluna única editorial (não carrossel — nada oculto).
          Mais respiro entre vozes; quote dimensionada para o toque. ── */
-      .dep-top { flex-direction: column; align-items: flex-start; gap: var(--s5); }
-      .dep-item { padding: var(--s7) 0; }
-      .dep-text { font-size: clamp(20px, 6vw, 25px); line-height: 1.45; }
+      .dep-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--s5);
+      }
+
+      .dep-item {
+        padding: var(--s7) 0;
+      }
+
+      .dep-text {
+        font-size: clamp(20px, 6vw, 25px);
+        line-height: 1.45;
+      }
 
       /* ── FORMULÁRIO: experiência de toque — labels maiores, campos com
          respiro, fontes 16px (evita zoom automático no iOS), submit alto. ── */
-      .cta-form-body { 
-        padding: 32px 24px 72px; /* Safe area extra no fundo do card para o WhatsApp float */
+      .cta-form-body {
+        padding: var(--s6) var(--s5);
       }
-      .form-field { margin-bottom: 28px; }
-      .form-label { font-size: 17px; line-height: 1.45; }
+
+      .form-field {
+        margin-bottom: var(--s6);
+      }
+
+      .form-label {
+        font-size: 17px;
+        line-height: 1.45;
+      }
+
       .form-input,
       .form-select {
         height: 54px;
         font-size: 16px;
       }
-      .form-textarea { min-height: 130px; font-size: 16px; }
-      .form-submit { height: 58px; font-size: 14px; }
-      .cta-form-title { font-size: 23px; }
-      .cta-form-sub { font-size: 14px; }
+
+      .form-textarea {
+        min-height: 130px;
+        font-size: 16px;
+      }
+
+      .form-submit {
+        height: 58px;
+        font-size: 14px;
+      }
+
+      .cta-form-title {
+        font-size: 23px;
+      }
+
+      .cta-form-sub {
+        font-size: 14px;
+      }
 
       /* ── Alvos de toque ≥44px ── */
       .btn,
@@ -3197,23 +3428,35 @@
          base inteira (sem reservar canto para o WA); quando ele está visível,
          o botão de WhatsApp SOBE para acima do banner (seletor de irmão), então
          a borda inferior nunca tem dois elementos pesados disputando espaço. */
-      .wa-tooltip { display: none; }
+      .wa-tooltip {
+        display: none;
+      }
 
-      .wa-float { bottom: 16px; right: 16px; }
+      .wa-float {
+        bottom: 16px;
+        right: 16px;
+      }
 
       .lgpd-banner {
-        left: 12px; right: 12px; bottom: 12px;
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
         padding: 12px 16px;
       }
-      .lgpd-text { font-size: 11px; line-height: 1.4; }
-      .lgpd-btn { 
-        background: transparent; 
-        color: var(--gold-dim); 
-        padding: 6px 12px; 
+
+      .lgpd-text {
+        font-size: 11px;
+        line-height: 1.4;
+      }
+
+      .lgpd-btn {
+        background: transparent;
+        color: var(--gold-dim);
+        padding: 6px 12px;
         min-height: 36px;
       }
 
-      .lgpd-banner:not([hidden]) ~ .wa-float {
+      .lgpd-banner:not([hidden])~.wa-float {
         bottom: 100px;
       }
     }
@@ -3222,17 +3465,31 @@
        MOBILE-XS ≤380px — ajustes finos para a faixa 320–380.
        ════════════════════════════════════════════════════════════ */
     @media (max-width: 380px) {
-      .nav-logo-sub { display: none; }
+      .nav-logo-sub {
+        display: none;
+      }
 
-      .hero-title .l2 { font-size: 40px; }
-      .hero-title .l1 { font-size: 19px; }
+      .hero-title .l2 {
+        font-size: 40px;
+      }
+
+      .hero-title .l1 {
+        font-size: 19px;
+      }
 
       /* Carrossel ocupa quase toda a largura; ainda deixa a próxima espiando. */
-      .gallery-cell { flex-basis: 84vw; }
-      .caes-cell { flex-basis: 68vw; }
+      .gallery-cell {
+        flex-basis: 84vw;
+      }
+
+      .caes-cell {
+        flex-basis: 68vw;
+      }
 
       /* Byline de credenciais não quebra feio em telas estreitas. */
-      .sobre-creds { gap: var(--s2) var(--s3); }
+      .sobre-creds {
+        gap: var(--s2) var(--s3);
+      }
     }
   </style>
 </head>
@@ -3311,7 +3568,8 @@
         </h1>
 
         <p class="hero-subtitle reveal">
-          Cuidar da sua mente é um passo importante — e você não precisa fazer isso sozinho. Aqui, você encontra escuta, acolhimento e base científica.
+          Cuidar da sua mente é um passo importante — e você não precisa fazer isso sozinho. Aqui, você encontra escuta,
+          acolhimento e base científica.
         </p>
 
         <div class="hero-ctas reveal">
@@ -3322,8 +3580,8 @@
 
       <!-- Credenciais discretas -->
       <div class="hero-credentials reveal reveal-d1">
-        <a class="cred" href="https://www.google.com/search?q=Clínica+Árvore+da+Vida+Marília+psicologia"
-          target="_blank" rel="noopener" aria-label="5,0 estrelas nas avaliações do Google">
+        <a class="cred" href="https://www.google.com/search?q=Clínica+Árvore+da+Vida+Marília+psicologia" target="_blank"
+          rel="noopener" aria-label="5,0 estrelas nas avaliações do Google">
           <b>5,0</b> <span class="cred-star" aria-hidden="true">★</span> no Google
         </a>
         <span class="cred-sep" aria-hidden="true"></span>
@@ -3338,7 +3596,8 @@
   <section class="abertura">
     <div class="abertura-inner">
       <p class="abertura-quote reveal">
-        Cuidar da saúde mental é um processo contínuo. Aqui, criamos espaço para que ele aconteça com escuta, sigilo e cuidado — <em>no seu tempo.</em>
+        Cuidar da saúde mental é um processo contínuo. Aqui, criamos espaço para que ele aconteça com escuta, sigilo e
+        cuidado — <em>no seu tempo.</em>
       </p>
       <div class="abertura-stats reveal reveal-d1">
         <div class="stat-item">
@@ -3358,7 +3617,8 @@
     <div class="sobre-inner">
       <div class="sobre-visual reveal">
         <div class="sobre-img-main">
-          <img src="3.jpeg" alt="Poltronas confortáveis na sala de terapia da Clínica Árvore da Vida" loading="lazy" decoding="async">
+          <img src="3.jpeg" alt="Poltronas confortáveis na sala de terapia da Clínica Árvore da Vida" loading="lazy"
+            decoding="async">
         </div>
       </div>
 
@@ -3367,14 +3627,18 @@
         <h2 class="sobre-lead">
           Um espaço para cuidar de você <em>com profundidade</em> — onde cada história tem tempo para ser ouvida.
         </h2>
-        
+
         <p class="sobre-body">
-          Acreditamos que cada pessoa carrega sua própria história e singularidade. Com o cuidado certo, é possível ressignificar caminhos, fortalecer emoções e seguir com mais leveza, sempre respeitando o seu tempo em um ambiente de absoluto sigilo.
+          Acreditamos que cada pessoa carrega sua própria história e singularidade. Com o cuidado certo, é possível
+          ressignificar caminhos, fortalecer emoções e seguir com mais leveza, sempre respeitando o seu tempo em um
+          ambiente de absoluto sigilo.
         </p>
         <p class="sobre-body">
-          Nossa clínica, localizada no coração de Marília-SP, é um espaço dedicado ao acolhimento genuíno e à escuta atenta. Todo nosso trabalho é estritamente fundamentado na Terapia Cognitivo-Comportamental (TCC), com base científica, sigilo e responsabilidade clínica em cada etapa do cuidado.
+          Nossa clínica, localizada no coração de Marília-SP, é um espaço dedicado ao acolhimento genuíno e à escuta
+          atenta. Todo nosso trabalho é estritamente fundamentado na Terapia Cognitivo-Comportamental (TCC), com base
+          científica, sigilo e responsabilidade clínica em cada etapa do cuidado.
         </p>
-        
+
         <p class="sobre-creds">
           <span>CRP 06 Registrado</span>
           <span>CFP</span>
@@ -3389,7 +3653,8 @@
   <section class="manifesto" id="pilares">
     <div class="manifesto-inner">
       <p class="manifesto-lede reveal">
-        Muito além das técnicas, três princípios sustentam nossa clínica — garantindo uma prática ética, segura e <em>focada na sua singularidade.</em>
+        Muito além das técnicas, três princípios sustentam nossa clínica — garantindo uma prática ética, segura e
+        <em>focada na sua singularidade.</em>
       </p>
 
       <div class="manifesto-list">
@@ -3398,7 +3663,8 @@
           <div class="principio-body">
             <h3 class="principio-title">Ciência &amp; <em>Ética</em></h3>
             <p class="principio-text">
-              Seu cuidado é conduzido com base em evidências científicas sólidas e total sigilo. Um acompanhamento responsável, sustentado pela TCC e comprometido com eficácia clínica.
+              Seu cuidado é conduzido com base em evidências científicas sólidas e total sigilo. Um acompanhamento
+              responsável, sustentado pela TCC e comprometido com eficácia clínica.
             </p>
           </div>
         </div>
@@ -3408,7 +3674,8 @@
           <div class="principio-body">
             <h3 class="principio-title"><em>Humanização</em></h3>
             <p class="principio-text">
-              Nossa clínica foi feita para pessoas. Você é ouvido com atenção e respeito genuíno, construindo conosco um ambiente onde pode expressar sua realidade livre de julgamentos.
+              Nossa clínica foi feita para pessoas. Você é ouvido com atenção e respeito genuíno, construindo conosco um
+              ambiente onde pode expressar sua realidade livre de julgamentos.
             </p>
           </div>
         </div>
@@ -3418,7 +3685,8 @@
           <div class="principio-body">
             <h3 class="principio-title">Autonomia &amp; <em>Cuidado</em></h3>
             <p class="principio-text">
-              O objetivo terapêutico central é o desenvolvimento de recursos próprios. Ajudamos você a ganhar clareza e ferramentas para lidar de forma ativa com suas emoções e escolhas.
+              O objetivo terapêutico central é o desenvolvimento de recursos próprios. Ajudamos você a ganhar clareza e
+              ferramentas para lidar de forma ativa com suas emoções e escolhas.
             </p>
           </div>
         </div>
@@ -3449,17 +3717,19 @@
         <div class="psy-content">
           <h3 class="psy-name">Dra. Isabella Maldonado Dias</h3>
           <span class="psy-byline">Psicóloga Clínica &amp; Mestre · CRP 06/142744</span>
-          
-          <p class="psy-quote">“Cada pessoa tem um ritmo próprio — e é nesse ritmo que construímos um processo seguro e no seu tempo.”</p>
-          
+
+          <p class="psy-quote">“Cada pessoa tem um ritmo próprio — e é nesse ritmo que construímos um processo seguro e
+            no seu tempo.”</p>
+
           <p class="psy-bio">
-            Especialista em neurodesenvolvimento, reabilitação e saúde mental. Mestre em Interações Funcionais e Docente universitária com extensa prática clínica focada no cuidado singular de cada paciente.
+            Especialista em neurodesenvolvimento, reabilitação e saúde mental. Mestre em Interações Funcionais e Docente
+            universitária com extensa prática clínica focada no cuidado singular de cada paciente.
           </p>
-          
+
           <div class="psy-focus">
             TCC · Ansiedade · Depressão
           </div>
-          
+
           <div class="psy-actions">
             <a href="#agendar" class="text-link">Agendar Sessão</a>
           </div>
@@ -3474,17 +3744,19 @@
         <div class="psy-content">
           <h3 class="psy-name">Dra. Denise Lais do Nascimento</h3>
           <span class="psy-byline">Psicóloga Clínica · CRP 06/142754</span>
-          
-          <p class="psy-quote">“A terapia é um espaço de acolhimento — onde você pode ser exatamente quem é, sem julgamentos.”</p>
-          
+
+          <p class="psy-quote">“A terapia é um espaço de acolhimento — onde você pode ser exatamente quem é, sem
+            julgamentos.”</p>
+
           <p class="psy-bio">
-            Dedicada à regulação emocional e reestruturação de pensamentos para promover autonomia, clareza e autocuidado através de um processo empático.
+            Dedicada à regulação emocional e reestruturação de pensamentos para promover autonomia, clareza e
+            autocuidado através de um processo empático.
           </p>
-          
+
           <div class="psy-focus">
             TCC · Regulação Emocional · Saúde Mental
           </div>
-          
+
           <div class="psy-actions">
             <a href="#agendar" class="text-link">Agendar Sessão</a>
           </div>
@@ -3499,17 +3771,19 @@
         <div class="psy-content">
           <h3 class="psy-name">Dra. Juliana Raquel Fachini</h3>
           <span class="psy-byline">Psicopedagoga · CFEP 2619651</span>
-          
-          <p class="psy-quote">“Cada criança aprende de um jeito diferente — e encontrar esse caminho é o que move meu trabalho.”</p>
-          
+
+          <p class="psy-quote">“Cada criança aprende de um jeito diferente — e encontrar esse caminho é o que move meu
+            trabalho.”</p>
+
           <p class="psy-bio">
-            Especialista em Educação Inclusiva e suporte psicopedagógico clínico. Focada no desenvolvimento infantil, aprendizagem e acompanhamento humano e direcionado.
+            Especialista em Educação Inclusiva e suporte psicopedagógico clínico. Focada no desenvolvimento infantil,
+            aprendizagem e acompanhamento humano e direcionado.
           </p>
-          
+
           <div class="psy-focus">
             TEA · Inclusão · Infantil
           </div>
-          
+
           <div class="psy-actions">
             <a href="#agendar" class="text-link">Agendar Sessão</a>
           </div>
@@ -3524,17 +3798,19 @@
         <div class="psy-content">
           <h3 class="psy-name">Lívia de Oliveira</h3>
           <span class="psy-byline">Acadêmica de Psicologia · UNIMAR</span>
-          
-          <p class="psy-quote">“Aprender a cuidar começa pela escuta profunda — e cada atendimento é conduzido com rigor ético e acolhimento.”</p>
-          
+
+          <p class="psy-quote">“Aprender a cuidar começa pela escuta profunda — e cada atendimento é conduzido com rigor
+            ético e acolhimento.”</p>
+
           <p class="psy-bio">
-            Prática clínica baseada na ética e nas abordagens contemporâneas da psicologia, com foco exclusivo no desenvolvimento da saúde mental sob rigorosa supervisão clínica.
+            Prática clínica baseada na ética e nas abordagens contemporâneas da psicologia, com foco exclusivo no
+            desenvolvimento da saúde mental sob rigorosa supervisão clínica.
           </p>
-          
+
           <div class="psy-focus">
             Atendimento Supervisionado · Acolhimento
           </div>
-          
+
           <div class="psy-actions">
             <a href="#agendar" class="text-link">Agendar Triagem</a>
             <span class="psy-note">Atendimento supervisionado</span>
@@ -3549,7 +3825,8 @@
   <section class="jornada" id="processo">
     <div class="jornada-inner">
       <div class="jornada-open reveal">
-        <span class="section-index section-index--light"><span>O caminho</span> · <b>do primeiro contato ao seu progresso</b></span>
+        <span class="section-index section-index--light"><span>O caminho</span> · <b>do primeiro contato ao seu
+            progresso</b></span>
         <h2 class="jornada-headline">
           Começar a terapia não é um formulário.<br>É uma <em>conversa que respeita o seu tempo.</em>
         </h2>
@@ -3561,7 +3838,8 @@
           <span class="etapa-num">i.</span>
           <h3 class="etapa-title">O primeiro contato</h3>
           <p class="etapa-text">
-            Você dá o primeiro passo pelo WhatsApp ou pelo formulário, com as palavras que tiver. Não existe roteiro certo, e não há pressa.
+            Você dá o primeiro passo pelo WhatsApp ou pelo formulário, com as palavras que tiver. Não existe roteiro
+            certo, e não há pressa.
           </p>
         </div>
 
@@ -3570,7 +3848,8 @@
           <span class="etapa-num">ii.</span>
           <h3 class="etapa-title">A primeira conversa</h3>
           <p class="etapa-text">
-            Escutamos o seu momento, o que pesa, o que você espera e o que ainda não tem nome. A partir disso, entendemos juntos o que faz sentido.
+            Escutamos o seu momento, o que pesa, o que você espera e o que ainda não tem nome. A partir disso,
+            entendemos juntos o que faz sentido.
           </p>
         </div>
 
@@ -3601,47 +3880,52 @@
 
   <!-- ═══════════ AMBIENTE ═══════════ -->
   <section class="ambiente" id="ambiente">
-    <div class="ambiente-inner">
-      <div class="ambiente-header reveal">
-        <h2 class="ambiente-title">Cada detalhe foi pensado<br>para você <em>respirar</em></h2>
-        <p class="ambiente-desc">
-          Iluminação natural, mobiliário acolhedor e silêncio cuidado. Um espaço que acolhe antes de qualquer palavra.
-        </p>
-      </div>
+    <div class="ambiente-header">
+      <h2 class="ambiente-title reveal">Cada detalhe foi pensado<br>para você <em>respirar</em></h2>
+      <p class="ambiente-desc reveal reveal-d1">
+        Iluminação natural, mobiliário acolhedor, silêncio curado. Um espaço que acolhe antes de qualquer palavra.
+      </p>
+    </div>
 
-      <div class="ambiente-gallery editorial-grid reveal">
-        <div class="gallery-main">
-          <figure class="gallery-cell gc--estar">
-            <img src="1.jpeg" alt="Sala de estar" data-lightbox="true" loading="lazy">
-            <figcaption class="gallery-caption"><span class="gallery-caption-text">Sala de Estar</span></figcaption>
-          </figure>
+    <!-- QA: crops de enquadramento (object-position/transform) saíram dos style= inline
+         para classes modificadoras .gc--* no CSS. Cada foto tira AC/persiana/TV do quadro. -->
+    <div class="ambiente-gallery-grid reveal">
+      <div class="gallery-cell destaque gc--terapia">
+        <div class="gallery-inner">
+          <img src="main3.jpeg" alt="Sala de terapia individual" data-lightbox="true" loading="lazy" decoding="async">
         </div>
-        <div class="gallery-side">
-          <figure class="gallery-cell gc--terapia">
-            <img src="main3.jpeg" alt="Sala de terapia individual" data-lightbox="true" loading="lazy">
-            <figcaption class="gallery-caption"><span class="gallery-caption-text">Sala de Terapia</span></figcaption>
-          </figure>
-          <figure class="gallery-cell gc--recepcao">
-            <img src="4.jpeg" alt="Recepção" data-lightbox="true" loading="lazy">
-            <figcaption class="gallery-caption"><span class="gallery-caption-text">Recepção</span></figcaption>
-          </figure>
-        </div>
+        <div class="gallery-caption"><span class="gallery-caption-text">Sala de Terapia</span></div>
       </div>
+      <div class="gallery-cell gc--recepcao">
+        <div class="gallery-inner">
+          <img src="4.jpeg" alt="Recepção acolhedora" data-lightbox="true" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-caption"><span class="gallery-caption-text">Recepção</span></div>
+      </div>
+      <div class="gallery-cell gc--estar">
+        <div class="gallery-inner">
+          <img src="1.jpeg" alt="Sala de estar e espaço de café" data-lightbox="true" loading="lazy" decoding="async">
+        </div>
+        <div class="gallery-caption"><span class="gallery-caption-text">Sala de Estar</span></div>
+      </div>
+    </div>
+    <!-- Indicador de scroll horizontal — visível só no mobile (a galeria vira carrossel). -->
+    <p class="scroll-hint" aria-hidden="true"><span class="scroll-hint-track"></span>arraste para ver o espaço</p>
 
-      <!-- Cães terapeutas -->
-      <div class="caes-block reveal reveal-d1">
-        <div class="caes-text">
-          <h3 class="caes-title">Cães <em>terapeutas</em></h3>
-          <p class="caes-desc">Bella e Maylla acompanham algumas sessões e ajudam a criar um ambiente mais leve, seguro e afetivo — sempre respeitando o momento de cada paciente.</p>
-        </div>
-        <div class="caes-gallery">
-          <figure class="caes-cell">
-            <img src="cao1.jpeg" alt="Bella, cão terapeuta" data-lightbox="true" loading="lazy">
-          </figure>
-          <figure class="caes-cell">
-            <img src="cao2.jpeg" alt="Maylla, cão terapeuta" data-lightbox="true" loading="lazy">
-          </figure>
-        </div>
+    <!-- Cães terapeutas -->
+    <div class="caes-header reveal">
+      <h3 class="caes-title">Cães <em>terapeutas</em></h3>
+      <p class="caes-desc">Bella e Maylla acompanham as sessões e ajudam a criar um ambiente seguro, leve e afetuoso —
+        terapia assistida por animais.</p>
+    </div>
+    <div class="caes-strip reveal">
+      <div class="caes-cell">
+        <img src="cao1.jpeg" alt="Bella, cão terapeuta" data-lightbox="true" loading="lazy" decoding="async">
+        <div class="gallery-caption"><span class="gallery-caption-text">Bella</span></div>
+      </div>
+      <div class="caes-cell">
+        <img src="cao2.jpeg" alt="Maylla, cão terapeuta" data-lightbox="true" loading="lazy" decoding="async">
+        <div class="gallery-caption"><span class="gallery-caption-text">Maylla</span></div>
       </div>
     </div>
   </section>
@@ -3666,18 +3950,27 @@
       <div class="dep-top">
         <h2 class="dep-headline reveal">Histórias de <em>acolhimento</em></h2>
         <a class="dep-google-badge reveal reveal-d1"
-          href="https://www.google.com/search?q=Clínica+Árvore+da+Vida+Marília+psicologia"
-          target="_blank" rel="noopener noreferrer" aria-label="Ver as avaliações da clínica no Google (abre em nova aba)">
+          href="https://www.google.com/search?q=Clínica+Árvore+da+Vida+Marília+psicologia" target="_blank"
+          rel="noopener noreferrer" aria-label="Ver as avaliações da clínica no Google (abre em nova aba)">
           <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
-            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
-            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
-            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+            <path
+              d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+              fill="#4285F4" />
+            <path
+              d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+              fill="#34A853" />
+            <path
+              d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"
+              fill="#FBBC05" />
+            <path
+              d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"
+              fill="#EA4335" />
           </svg>
           <div class="dep-stars" aria-hidden="true">★★★★★</div>
           <span class="dep-google-text">Ver no Google</span>
           <svg class="dep-badge-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
-            <path d="M3 9l6-6M4.5 3H9v4.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M3 9l6-6M4.5 3H9v4.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </a>
       </div>
@@ -3732,7 +4025,8 @@
         Quando você se sentir pronto,<br><em>estaremos aqui</em>.
       </h2>
       <p class="cta-body">
-        Dar o primeiro passo pode parecer difícil — e tudo bem ir no seu tempo. Escreva com as palavras que tiver; a equipe lê com cuidado e responde com sigilo.
+        Dar o primeiro passo pode parecer difícil — e tudo bem ir no seu tempo. Escreva com as palavras que tiver; a
+        equipe lê com cuidado e responde com sigilo.
       </p>
       <div class="cta-features">
         <div class="cta-feat">Sigilo e confidencialidade, conforme o Código de Ética do CFP</div>
@@ -3745,7 +4039,8 @@
     <div class="cta-form-wrap reveal reveal-d1">
       <div class="cta-form-header">
         <h3 class="cta-form-title">Vamos começar uma conversa</h3>
-        <p class="cta-form-sub">Não precisa ter tudo claro agora. Conte o que quiser — a gente cuida do resto, com sigilo e sem pressa.</p>
+        <p class="cta-form-sub">Não precisa ter tudo claro agora. Conte o que quiser — a gente cuida do resto, com
+          sigilo e sem pressa.</p>
       </div>
       <div class="cta-form-body">
         <div class="form-field">
@@ -3774,7 +4069,8 @@
         <button class="form-submit" id="form-submit-btn" onclick="enviarWhatsApp()">
           Enviar com cuidado
         </button>
-        <p class="form-privacy">Seus dados são usados apenas para entrar em contato sobre seu atendimento e tratados com sigilo, conforme a LGPD. Não compartilhamos suas informações com terceiros.
+        <p class="form-privacy">Seus dados são usados apenas para entrar em contato sobre seu atendimento e tratados com
+          sigilo, conforme a LGPD. Não compartilhamos suas informações com terceiros.
           <br><a href="privacidade.html" class="footer-privacy-link">Política de Privacidade</a>
         </p>
       </div>
@@ -3803,7 +4099,9 @@
         <div class="loc-row">
           <div class="loc-icon loc-icon-g">
             <svg viewBox="0 0 18 18" fill="none">
-              <path d="M9 1.5C6.52 1.5 4.5 3.52 4.5 6c0 3.75 4.5 10.5 4.5 10.5S13.5 9.75 13.5 6c0-2.48-2.02-4.5-4.5-4.5z" stroke="#1A3A2F" stroke-width="1.1" />
+              <path
+                d="M9 1.5C6.52 1.5 4.5 3.52 4.5 6c0 3.75 4.5 10.5 4.5 10.5S13.5 9.75 13.5 6c0-2.48-2.02-4.5-4.5-4.5z"
+                stroke="#1A3A2F" stroke-width="1.1" />
               <circle cx="9" cy="6" r="1.8" stroke="#1A3A2F" stroke-width=".9" />
             </svg>
           </div>
@@ -3827,7 +4125,9 @@
         <div class="loc-row">
           <div class="loc-icon loc-icon-g">
             <svg viewBox="0 0 18 18" fill="none">
-              <path d="M3 4.5C3 3.67 3.67 3 4.5 3h1.38c.32 0 .6.2.7.5l.87 2.6a.75.75 0 01-.17.78L6.1 8.03a9.95 9.95 0 004.87 4.87l1.15-1.18a.75.75 0 01.78-.17l2.6.87c.3.1.5.38.5.7V14.5c0 .83-.67 1.5-1.5 1.5C6.54 16 2 11.46 2 5.5" stroke="#1A3A2F" stroke-width="1" stroke-linecap="round" />
+              <path
+                d="M3 4.5C3 3.67 3.67 3 4.5 3h1.38c.32 0 .6.2.7.5l.87 2.6a.75.75 0 01-.17.78L6.1 8.03a9.95 9.95 0 004.87 4.87l1.15-1.18a.75.75 0 01.78-.17l2.6.87c.3.1.5.38.5.7V14.5c0 .83-.67 1.5-1.5 1.5C6.54 16 2 11.46 2 5.5"
+                stroke="#1A3A2F" stroke-width="1" stroke-linecap="round" />
             </svg>
           </div>
           <div>
@@ -3892,7 +4192,8 @@
   <!-- ═══════════ BANNER LGPD ═══════════ -->
   <div class="lgpd-banner" id="lgpd-banner" role="region" aria-label="Aviso de privacidade" hidden>
     <p class="lgpd-text">
-      Usamos cookies essenciais para garantir a melhor experiência, conforme a LGPD. <a href="privacidade.html">Política de Privacidade</a>
+      Usamos cookies essenciais para garantir a melhor experiência, conforme a LGPD. <a href="privacidade.html">Política
+        de Privacidade</a>
     </p>
     <button class="lgpd-btn" id="lgpd-accept">Entendi</button>
   </div>
@@ -3903,8 +4204,10 @@
     <a href="https://wa.me/5514997775585" class="wa-btn" target="_blank" rel="noopener" title="WhatsApp"
       aria-label="Contato via WhatsApp">
       <svg viewBox="0 0 24 24" fill="currentColor">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.852a.5.5 0 00.609.61l6.107-1.458A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-4.99-1.368l-.358-.212-3.713.887.903-3.619-.234-.372A9.818 9.818 0 012.182 12C2.182 6.565 6.565 2.182 12 2.182S21.818 6.565 21.818 12 17.435 21.818 12 21.818z" />
+        <path
+          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+        <path
+          d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.852a.5.5 0 00.609.61l6.107-1.458A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-4.99-1.368l-.358-.212-3.713.887.903-3.619-.234-.372A9.818 9.818 0 012.182 12C2.182 6.565 6.565 2.182 12 2.182S21.818 6.565 21.818 12 17.435 21.818 12 21.818z" />
       </svg>
     </a>
   </div>
