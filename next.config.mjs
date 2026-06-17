@@ -10,12 +10,14 @@ const nextConfig = {
     unoptimized: true,
   },
   async rewrites() {
-    return [
-      {
-        source: "/",
-        destination: "/index-editorial.html",
-      },
-    ];
+    return {
+      beforeFiles: [
+        {
+          source: "/",
+          destination: "/index-editorial.html",
+        },
+      ],
+    };
   },
 };
 
