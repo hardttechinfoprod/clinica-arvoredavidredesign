@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --headless=new --disable-gpu --no-first-run --no-sandbox --hide-scrollbars --user-data-dir=\"C:/Users/pedro/AppData/Local/Temp/crshot2\" --force-device-scale-factor=1 --window-size=1440,900 --virtual-time-budget=5000 --screenshot=\"_v_hero.png\" \"file:///C:/Users/pedro/Documents/avore-da-vida-redesign/public/index-editorial.html\")",
+      "Bash(echo \"exit=$?\")",
+      "Bash(ls -la _v_hero.png)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-first-run --hide-scrollbars --user-data-dir=C:/Users/pedro/AppData/Local/Temp/crshot3 --force-device-scale-factor=1 --window-size=1440,900 --virtual-time-budget=5000 --screenshot=C:/Users/pedro/AppData/Local/Temp/av_hero.png file:///C:/Users/pedro/Documents/avore-da-vida-redesign/public/index-editorial.html)",
+      "Read(//c/Users/pedro/AppData/Local/Temp/**)",
+      "Bash(cp C:/Users/pedro/AppData/Local/Temp/av_hero.png C:/Users/pedro/Documents/avore-da-vida-redesign/public/_v_hero.png)",
+      "Bash(rm -f _v_hero.png)",
+      "Bash(rm -f \"C:/Users/pedro/AppData/Local/Temp/av_hero.png\")",
+      "Bash(rm -rf \"C:/Users/pedro/AppData/Local/Temp/crshot2\" \"C:/Users/pedro/AppData/Local/Temp/crshot3\" \"C:/Users/pedro/AppData/Local/Temp/cr_shot_\"*)",
+      "Bash(rm -f \"C:/Users/pedro/AppData/Local/Temp/av_qa.png\")",
+      "Bash(rm -rf \"C:/Users/pedro/AppData/Local/Temp/crqa\")",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-first-run --hide-scrollbars --user-data-dir=C:/Users/pedro/AppData/Local/Temp/crm1 --window-size=390,844 --virtual-time-budget=5500 --screenshot=C:/Users/pedro/AppData/Local/Temp/m_hero.png file:///C:/Users/pedro/Documents/avore-da-vida-redesign/public/index-editorial.html)",
+      "Bash(command -v magick convert)",
+      "Bash(\"/c/Program Files/Google/Chrome/Application/chrome.exe\" --version)",
+      "Bash(node -e ' *)",
+      "Bash(rm -f _tmp_capture.html)",
+      "Bash(rm -f C:/Users/pedro/AppData/Local/Temp/m_*.png)",
+      "Bash(rm -rf C:/Users/pedro/AppData/Local/Temp/crm* C:/Users/pedro/AppData/Local/Temp/crr_* C:/Users/pedro/AppData/Local/Temp/crfull C:/Users/pedro/AppData/Local/Temp/cra C:/Users/pedro/AppData/Local/Temp/crf)",
+      "Bash(ls _tmp_capture.html)",
+      "Bash('/c/Program Files/Google/Chrome/Application/chrome.exe' --headless=new --disable-gpu --no-first-run --hide-scrollbars --user-data-dir=C:/Users/pedro/AppData/Local/Temp/crqa9 --window-size=1440,900 --virtual-time-budget=5000 --screenshot=C:/Users/pedro/AppData/Local/Temp/qa_hero.png file:///C:/Users/pedro/Documents/avore-da-vida-redesign/public/index-editorial.html)",
+      "Bash(rm -f C:/Users/pedro/AppData/Local/Temp/qa_hero.png)",
+      "Bash(rm -rf C:/Users/pedro/AppData/Local/Temp/crqa9)"
+    ]
+  }
+}

@@ -1,0 +1,4174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clínica Árvore da Vida — Psicologia humanizada em Marília, SP</title>
+  <meta name="description"
+    content="Clínica de psicologia em Marília, SP. Terapia Cognitivo-Comportamental com equipe especializada. Atendimento presencial humanizado e acolhedor. Agende sua consulta.">
+  <meta name="theme-color" content="#0E1F18">
+  <link rel="icon" type="image/png" href="logo-removebg-preview.png">
+  <link rel="apple-touch-icon" href="logo-removebg-preview.png">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Clínica Árvore da Vida — Psicologia humanizada em Marília, SP">
+  <meta property="og:description"
+    content="Terapia Cognitivo-Comportamental com equipe especializada. Atendimento presencial humanizado e acolhedor em Marília, SP.">
+  <meta property="og:image" content="main3.jpeg">
+  <meta property="og:image:alt" content="Sala de terapia acolhedora da Clínica Árvore da Vida">
+  <meta property="og:site_name" content="Clínica Árvore da Vida">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Clínica Árvore da Vida — Psicologia em Marília, SP">
+  <meta name="twitter:description"
+    content="Terapia Cognitivo-Comportamental com equipe especializada. Atendimento humanizado e acolhedor.">
+  <meta name="twitter:image" content="main3.jpeg">
+
+  <!-- Performance: preload da imagem do hero (LCP) e fontes com swap -->
+  <link rel="preload" as="image" href="main3.jpeg" fetchpriority="high">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;0,9..144,400;1,9..144,200;1,9..144,300;1,9..144,400&family=Instrument+Sans:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- SEO estruturado: JSON-LD de clínica de psicologia (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Psychologist",
+    "name": "Clínica Árvore da Vida",
+    "description": "Clínica de psicologia em Marília, SP. Terapia Cognitivo-Comportamental com equipe especializada e atendimento presencial humanizado.",
+    "image": "main3.jpeg",
+    "logo": "logo-removebg-preview.png",
+    "telephone": "+55-14-99777-5585",
+    "email": "contato@arvoredavida.com.br",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Guanas, 77 — Bairro Salgado Filho",
+      "addressLocality": "Marília",
+      "addressRegion": "SP",
+      "postalCode": "17501-000",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -22.2231876,
+      "longitude": -49.9580596
+    },
+    "openingHoursSpecification": [{
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "22:00"
+    }, {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "08:00",
+      "closes": "12:00"
+    }]
+  }
+  </script>
+  <style>
+    /* ══════════════════════════════════════════════════════
+   TOKENS — Única fonte de verdade. Nunca duplicar.
+══════════════════════════════════════════════════════ */
+    :root {
+      /* ════════════════════════════════════════════════════════
+         VERDES — espinha dorsal da identidade. forest-deep cirúrgico
+         (máx. 3 seções/página). Do mais escuro ao detalhe.
+         ════════════════════════════════════════════════════════ */
+      --forest-deep: #0E1F18;   /* Fundo escuro principal: hero, footer, 1 impacto */
+      --forest-mid: #1A3A2F;    /* Superfície escura elevada: drawer, jornada, avatares */
+      --forest-soft: #274D38;   /* Accent verde em títulos claros (em/italic) */
+      --moss: #3D6B52;          /* Hover states, bordas ativas */
+      --sage: #7A9E88;          /* Detalhe verde suave — nunca fundo de seção */
+
+      /* ════════════════════════════════════════════════════════
+         OURO — único acento quente. Sempre funcional, jamais decorativo.
+         ════════════════════════════════════════════════════════ */
+      --gold: #B8924A;          /* CTA primário, números, italic do hero, links ativos */
+      --gold-light: #CBA85F;    /* Hover do gold — nunca como cor base */
+      --gold-dim: #846828;      /* CORRIGIDO de #93732F (falhava AA): 4.66:1 sobre canvas, 4.95:1 sobre canvas-light. Eyebrows/credenciais. */
+      --gold-rgb: 184, 146, 74; /* Para rgba(): bordas, glows, sombras quentes */
+
+      /* ════════════════════════════════════════════════════════
+         SUPERFÍCIES — o "papel". Rampa com TOM MÉDIO (canvas-mid) que
+         quebra o binário escuro/claro entre seções adjacentes.
+         ════════════════════════════════════════════════════════ */
+      --canvas: #F4F1EB;            /* Fundo claro padrão — parchment quente */
+      --canvas-light: #FBF8F2;      /* Superfície elevada sobre canvas: cards, forms */
+      --canvas-mid: #D4CEBF;        /* Tom médio: ponte deep↔canvas / seção de respiro */
+      --surface-placeholder: #E5E5E7;  /* Placeholder de imagem antes de carregar */
+      --white: #FFFFFF;             /* Contraste máximo: localização, formulários */
+      /* canvas-cool (#F5F5F7) removido: cinza frio quebrava o calor da paleta. */
+
+      /* ════════════════════════════════════════════════════════
+         TEXTO — sobre fundos claros. Verificado p/ WCAG AA (4.5:1).
+         ════════════════════════════════════════════════════════ */
+      --ink: #1C1916;       /* Títulos, alto contraste */
+      --ink-mid: #4A4540;   /* Corpo de leitura principal */
+      --ink-light: #6E6863; /* CORRIGIDO de #7A7470 → atinge AA sobre canvas */
+      --ink-ghost: #A8A4A0; /* Placeholder/terciário — nunca leitura */
+
+      /* Texto sobre fundos escuros (forest-deep / forest-mid) */
+      --on-dark: rgba(255, 255, 255, 0.92);        /* Títulos sobre escuro */
+      --on-dark-body: rgba(255, 255, 255, 0.80);   /* Corpo sobre escuro */
+      --on-dark-muted: rgba(255, 255, 255, 0.66);  /* CORRIGIDO de 0.55 → sobe p/ AA */
+      --on-dark-ghost: rgba(255, 255, 255, 0.30);  /* Copyright/legal */
+
+      /* Bordas */
+      --border: rgba(22, 40, 32, 0.07);     /* Divisor padrão em fundo claro */
+      --border-mid: rgba(22, 40, 32, 0.13); /* Divisor com mais peso */
+
+      /* ════════════════════════════════════════════════════════
+         TIPOGRAFIA — Fraunces (emoção) + Instrument Sans (âncora).
+         ════════════════════════════════════════════════════════ */
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Instrument Sans', system-ui, sans-serif;
+
+      /* Títulos — fluidos via clamp. */
+      --t-hero: clamp(52px, 7vw, 88px);
+      --t-h1: clamp(44px, 6vw, 72px);
+      --t-h2: clamp(32px, 4vw, 52px);
+      --t-h3: clamp(22px, 2.5vw, 32px);
+      --t-h4: clamp(18px, 1.8vw, 22px);
+      --t-quote: clamp(20px, 2.2vw, 28px);
+
+      /* Corpo e suporte — agora FLUIDOS (eram fixos): floor menor evita estouro
+         em telas intermediárias (768–1024px); ceiling preserva o alvo de desktop. */
+      --t-lead: clamp(17px, 0.5vw + 15.5px, 19px);
+      --t-body: clamp(15.5px, 0.35vw + 14.6px, 17px);
+      --t-body-sm: clamp(14px, 0.25vw + 13.4px, 15px);
+      --t-caption: clamp(12.5px, 0.15vw + 12.1px, 13px);
+
+      /* Labels/micro — fixos por design (não devem escalar). */
+      --t-eyebrow: 11px;
+      --t-label: 12px;
+      --t-button: 13px;
+      --t-nav: 12px;
+
+      /* ════════════════════════════════════════════════════════
+         ESPAÇAMENTO — escala modular. Whitespace é elemento de design.
+         ════════════════════════════════════════════════════════ */
+      --s1: 4px;
+      --s2: 8px;
+      --s3: 12px;
+      --s4: 16px;
+      --s5: 24px;
+      --s6: 32px;
+      --s7: 48px;
+      --s8: 64px;
+      --s9: 96px;
+      --s10: 128px;
+
+      /* Layout */
+      --max-content: 1280px;
+      --max-wide: 1440px;
+      --max-narrow: 800px;
+      --max-form: 520px;
+      --section-y: clamp(80px, 10vw, 140px);
+      --section-x: clamp(24px, 8vw, 120px);
+
+      /* Radius */
+      --r-sm: 8px;
+      --r-md: 16px;
+      --r-lg: 24px;
+      --r-pill: 9999px;
+
+      /* ════════════════════════════════════════════════════════
+         SOMBRAS — duas famílias por TEMPERATURA da superfície de baixo.
+         VERDE: estrutural/neutra — forms, elementos sobre WHITE puro.
+         QUENTE: cards sobre canvas/canvas-light/canvas-mid (não esverdeia).
+         ════════════════════════════════════════════════════════ */
+      --shadow-1: 0 8px 32px rgba(22, 40, 32, 0.07);
+      --shadow-2: 0 20px 56px rgba(22, 40, 32, 0.10);
+      --shadow-3: 0 40px 80px rgba(7, 13, 10, 0.22);
+      --shadow-warm-1: 0 8px 32px rgba(var(--gold-rgb), 0.10);   /* repouso em bege */
+      --shadow-warm-2: 0 20px 56px rgba(var(--gold-rgb), 0.16);  /* hover em bege */
+      --shadow-warm-3: 0 40px 80px rgba(147, 115, 47, 0.22);     /* elevação alta em bege */
+
+      /* ════════════════════════════════════════════════════════
+         MOVIMENTO — easings + DURAÇÕES nomeadas por intenção.
+         Regra: nada de conteúdo passa de --dur-slow, exceto --dur-cinematic.
+         ════════════════════════════════════════════════════════ */
+      --ease-out: cubic-bezier(0.16, 1, 0.3, 1);       /* desaceleração — maioria dos hovers */
+      --ease-in-out: cubic-bezier(0.45, 0, 0.55, 1);   /* transições de estado (nav, drawer) */
+      --ease-spring: cubic-bezier(0.165, 0.84, 0.44, 1); /* cards, Ken Burns, "peso" */
+
+      --dur-instant: 0.15s;   /* focus/active — feedback imediato */
+      --dur-fast: 0.22s;      /* hover de links e botões */
+      --dur-base: 0.35s;      /* cor, opacity, transições gerais */
+      --dur-slow: 0.5s;       /* reveal, transições de nav, read-ring */
+      --dur-cinematic: 14s;   /* Ken Burns / lifeline — APENAS */
+
+      /* ════════════════════════════════════════════════════════
+         ORNAMENTO — tokenizado p/ ter critério. Lei de uso: máx. 2/página,
+         só em Sobre e Footer (ver .ornament). Em qualquer outro lugar,
+         separar com whitespace ou mudança tipográfica.
+         ════════════════════════════════════════════════════════ */
+      --ornament-w: 40px;
+      --ornament-h: 1px;
+      --ornament-color: var(--gold);
+      --ornament-opacity: 0.55;
+    }
+
+    /* ══════════════════════════════════════════════════════
+   RESET
+══════════════════════════════════════════════════════ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-optical-sizing: auto;
+    }
+
+    .skip-link {
+      position: fixed;
+      top: -48px;
+      left: 16px;
+      z-index: 200;
+      padding: 12px 20px;
+      background: var(--forest-deep);
+      color: var(--canvas-light);
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: var(--r-sm);
+      border: 1px solid rgba(var(--gold-rgb), 0.5);
+      transition: top 0.2s var(--ease-out);
+    }
+
+    .skip-link:focus-visible {
+      top: 16px;
+    }
+
+    /* Banner LGPD */
+    .lgpd-banner {
+      position: fixed;
+      left: 24px;
+      bottom: 24px;
+      z-index: 90;
+      max-width: 320px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 14px 18px;
+      background: rgba(22, 40, 32, 0.95); /* forest-deep translúcido */
+      backdrop-filter: blur(12px) saturate(180%);
+      -webkit-backdrop-filter: blur(12px) saturate(180%);
+      border: 1px solid rgba(184, 146, 74, 0.2); /* Borda gold suave */
+      border-radius: var(--r-md);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    }
+
+    .lgpd-banner[hidden] {
+      display: none !important;
+    }
+
+    .lgpd-text {
+      font-size: 11px;
+      line-height: 1.45;
+      color: rgba(255, 255, 255, 0.85); /* on-dark-body */
+      margin: 0;
+    }
+
+    .lgpd-text a {
+      color: var(--gold-dim);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      transition: color 0.22s;
+    }
+
+    .lgpd-text a:hover {
+      color: var(--gold);
+    }
+
+    .lgpd-btn {
+      flex-shrink: 0;
+      padding: 6px 14px;
+      background: transparent;
+      border: 1px solid rgba(184, 146, 74, 0.4);
+      border-radius: var(--r-pill);
+      color: var(--gold-light);
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background 0.3s, color 0.3s, border-color 0.3s;
+    }
+
+    .lgpd-btn:hover {
+      background: rgba(184, 146, 74, 0.12); /* gold translúcido sutil */
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    .footer-privacy-link {
+      color: inherit;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    @media (max-width: 540px) {
+      .lgpd-banner {
+        left: 12px;
+        right: 12px;
+        bottom: 12px;
+        max-width: none;
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 12px;
+        padding: 12px 14px;
+        border-radius: 12px;
+      }
+
+      .lgpd-btn {
+        min-height: auto;
+        padding: 8px 12px;
+      }
+    }
+
+    /* Foco visível global */
+    a:focus-visible,
+    button:focus-visible,
+    [tabindex]:focus-visible,
+    .gallery-cell:focus-visible,
+    .caes-cell:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: var(--r-sm);
+    }
+
+    section[id] {
+      scroll-margin-top: 100px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    html,
+    body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: var(--sans);
+      background: var(--canvas);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    }
+
+    h1,
+    h2,
+    h3,
+    .t-display {
+      text-wrap: balance;
+    }
+
+    /* QA tipografia: controle de viúvas/órfãs em parágrafos longos. text-wrap:pretty
+       evita última linha com uma palavra solta; degrada sem efeito em navegadores antigos. */
+    p,
+    .sobre-body,
+    .principio-text,
+    .etapa-text,
+    .cta-body,
+    .hero-subtitle {
+      text-wrap: pretty;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      cursor: pointer;
+      font-family: var(--sans);
+      border: none;
+      background: none;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    section {
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ══════════════════════════════════════════════════════
+   TYPOGRAPHY UTILITIES
+══════════════════════════════════════════════════════ */
+    .t-eyebrow {
+      display: block;
+      font-family: var(--sans);
+      font-size: var(--t-eyebrow);
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      margin-bottom: var(--s3);
+    }
+
+    .t-eyebrow--light {
+      color: var(--gold);
+    }
+
+    .t-display {
+      font-family: var(--serif);
+      font-weight: 300;
+      line-height: 1.05;
+      letter-spacing: -0.01em;
+    }
+
+    .t-h1 { font-size: var(--t-h1); }
+    .t-h2 { font-size: var(--t-h2); }
+    .t-h3 { font-size: var(--t-h3); }
+    .t-h4 { font-size: var(--t-h4); }
+
+    .t-lead {
+      font-family: var(--sans);
+      font-size: var(--t-lead);
+      font-weight: 300;
+      line-height: 1.72;
+      color: var(--ink-mid);
+    }
+
+    .t-body {
+      font-family: var(--sans);
+      font-size: var(--t-body);
+      font-weight: 300;
+      line-height: 1.72;
+      color: var(--ink-light);
+    }
+
+    .t-body-sm {
+      font-family: var(--sans);
+      font-size: var(--t-body-sm);
+      font-weight: 400;
+      line-height: 1.65;
+      color: var(--ink-light);
+    }
+
+    /* Marca de seção: numeração editorial (substitui o eyebrow repetido).
+       Pequeno índice tipográfico — "capítulo" — que dá ritmo sem virar formatação. */
+    .section-index {
+      display: inline-flex;
+      flex-wrap: wrap; /* Permite quebrar a frase longa graciosamente no mobile */
+      align-items: baseline;
+      column-gap: var(--s2);
+      row-gap: 4px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    .section-index--light { color: var(--gold); }
+
+    .section-index b {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    /* ══════════════════════════════════════════════════════
+   ORNAMENT — Linha dourada (APENAS Sobre + Footer)
+══════════════════════════════════════════════════════ */
+    .ornament {
+      width: var(--ornament-w);
+      height: var(--ornament-h);
+      background: var(--ornament-color);
+      opacity: var(--ornament-opacity);
+      /* QA óptico: assimetria intencional — mais ar acima (separa do lead serif),
+         um pouco menos abaixo (mantém o vínculo com o corpo que a linha introduz). */
+      margin: var(--s6) 0 var(--s5);
+    }
+
+    /* ══════════════════════════════════════════════════════
+   CAMADA-ASSINATURA "ÁRVORE DA VIDA"
+══════════════════════════════════════════════════════ */
+    .lifeline {
+      position: fixed;
+      top: 0;
+      left: max(24px, calc((100vw - var(--max-wide)) / 2 - 36px));
+      height: 100vh;
+      width: 80px;
+      pointer-events: none;
+      z-index: 1;
+      overflow: visible;
+    }
+
+    .lifeline path {
+      fill: none;
+      stroke: var(--gold);
+      stroke-width: 1;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      opacity: 0.38;
+    }
+
+    .lifeline .lifeline-main {
+      stroke-dasharray: var(--ll-len, 1000);
+      stroke-dashoffset: calc(var(--ll-len, 1000) * (1 - var(--draw, 0)));
+    }
+
+    .read-ring {
+      position: fixed;
+      left: calc(max(24px, (100vw - var(--max-wide)) / 2 - 36px) + 17px);
+      bottom: 24px;
+      width: 46px;
+      height: 46px;
+      z-index: 40;
+      opacity: 0;
+      transform: scale(0.9);
+      transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+      pointer-events: none;
+    }
+
+    .read-ring.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .read-ring svg {
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+
+    .read-ring .rr-track {
+      fill: none;
+      stroke: rgba(var(--gold-rgb), 0.18);
+      stroke-width: 2;
+    }
+
+    .read-ring .rr-track-2 {
+      fill: none;
+      stroke: rgba(var(--gold-rgb), 0.12);
+      stroke-width: 1.5;
+    }
+
+    .read-ring .rr-progress {
+      fill: none;
+      stroke: var(--gold);
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-dasharray: var(--rr-len, 126);
+      stroke-dashoffset: calc(var(--rr-len, 126) * (1 - var(--read, 0)));
+    }
+
+    /* Efeitos antigos do ícone removidos */
+
+    @media (max-width: 1100px) {
+      .lifeline,
+      .read-ring {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .lifeline .lifeline-main {
+        stroke-dashoffset: 0;
+        opacity: 0.38;
+        transition: none;
+      }
+
+      .read-ring .rr-progress {
+        transition: none;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   BUTTONS
+══════════════════════════════════════════════════════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--s3);
+      font-family: var(--sans);
+      font-size: var(--t-button);
+      font-weight: 600;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      border-radius: var(--r-pill);
+      padding: 16px 32px;
+      transition: all var(--dur-fast) var(--ease-out);
+      white-space: nowrap;
+      text-decoration: none;
+      min-height: 48px;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--forest-deep);
+      box-shadow: 0 8px 20px rgba(var(--gold-rgb), 0.20);
+    }
+
+    .btn-primary:hover {
+      background: var(--gold-light);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 28px rgba(var(--gold-rgb), 0.28);
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: rgba(255, 255, 255, 0.90);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+    }
+
+    .btn-ghost:hover {
+      border-color: rgba(255, 255, 255, 0.60);
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    .btn-outline-dark {
+      background: transparent;
+      color: var(--forest-deep);
+      border: 1px solid var(--forest-deep);
+    }
+
+    .btn-outline-dark:hover {
+      background: var(--forest-deep);
+      color: var(--gold);
+    }
+
+    /* Botão editorial: quebra o padrão uppercase/sans — voz literária. */
+    .btn-editorial {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s2);
+      font-family: var(--serif);
+      font-style: italic;
+      font-weight: 300;
+      font-size: 17px;
+      letter-spacing: 0;
+      text-transform: none;
+      color: var(--forest-mid);
+      border-bottom: 1px solid rgba(26, 58, 47, 0.30);
+      padding-bottom: 3px;
+      transition: color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+    }
+
+    .btn-editorial::after {
+      content: '→';
+      font-style: normal;
+      font-size: 15px;
+      transition: transform var(--dur-fast) var(--ease-out);
+    }
+
+    .btn-editorial:hover {
+      color: var(--gold-dim);
+      border-color: var(--gold-dim);
+    }
+
+    .btn-editorial:hover::after {
+      transform: translateX(4px);
+    }
+
+    .btn-editorial--light {
+      color: rgba(255, 255, 255, 0.92);
+      border-color: rgba(var(--gold-rgb), 0.45);
+    }
+
+    .btn-editorial--light:hover {
+      color: var(--gold);
+      border-color: var(--gold);
+    }
+
+    .text-link {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--forest-mid);
+      border-bottom: 1px solid rgba(26, 58, 47, 0.25);
+      padding-bottom: 2px;
+      transition: all 0.22s var(--ease-out);
+    }
+
+    .text-link:hover {
+      color: var(--gold-dim);
+      border-color: var(--gold-dim);
+    }
+
+    .badge {
+      display: inline-block;
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: var(--r-pill);
+    }
+
+    .badge-forest {
+      background: rgba(22, 40, 32, 0.07);
+      color: var(--forest-mid);
+      border: 1px solid rgba(22, 40, 32, 0.12);
+    }
+
+    /* ══════════════════════════════════════════════════════
+   SCROLL REVEAL
+══════════════════════════════════════════════════════ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(16px);
+      transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+    }
+
+    .reveal.in {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Variante editorial: desliza da esquerda (elementos alinhados à margem). */
+    .reveal-slide {
+      opacity: 0;
+      transform: translateX(-18px);
+      transition: opacity 0.6s var(--ease-out), transform 0.6s var(--ease-out);
+    }
+
+    .reveal-slide.in {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .reveal-d1 { transition-delay: 0.06s; }
+    .reveal-d2 { transition-delay: 0.15s; }
+    .reveal-d3 { transition-delay: 0.24s; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal,
+      .reveal-slide {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+      }
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   NAVBAR
+══════════════════════════════════════════════════════ */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      height: 86px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 var(--section-x);
+      background: linear-gradient(to bottom, rgba(7, 13, 10, 0.90) 0%, rgba(7, 13, 10, 0.40) 70%, transparent 100%);
+      transition: background 0.38s var(--ease-in-out), height 0.38s var(--ease-in-out), box-shadow 0.38s;
+    }
+
+    #navbar.scrolled {
+      height: 70px;
+      background: rgba(238, 233, 222, 0.94);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      border-bottom: 1px solid rgba(184, 146, 74, 0.15);
+      box-shadow: none;
+    }
+
+    .nav-logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      flex-shrink: 0;
+      /* Largura base da área que a logo ocupará no layout */
+      width: clamp(200px, 16vw, 260px);
+      height: 52px;
+      position: relative;
+    }
+
+    .nav-logo-img {
+      /* Posição absoluta evita que a altura restrita do navbar "esmague" a imagem caso ela tenha muito espaço em branco no topo/base */
+      position: absolute;
+      top: 50%;
+      left: -5%;
+      transform: translateY(-50%);
+      
+      /* O tamanho agora é guiado 100% pela largura, ignorando altura */
+      width: 110%;
+      height: auto;
+      max-height: none;
+      display: block;
+      transition: filter 0.38s var(--ease-in-out);
+      
+      /* Para garantir contraste no hero escuro: força branco puro */
+      filter: brightness(0) invert(1);
+    }
+
+    @media (max-width: 768px) {
+      .nav-logo {
+        width: clamp(160px, 45vw, 210px);
+        height: 48px;
+      }
+    }
+
+    #navbar.scrolled .nav-logo-img {
+      /* No scroll com fundo claro: força um tom escuro neutro (ink) */
+      filter: brightness(0) opacity(0.88);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      margin: 0 auto;
+    }
+
+    .nav-links a {
+      font-family: var(--sans);
+      font-size: var(--t-nav);
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.80);
+      transition: color 0.22s;
+    }
+
+    .nav-links a:hover {
+      color: rgba(255, 255, 255, 1);
+    }
+
+    #navbar.scrolled .nav-links a {
+      color: var(--ink-mid);
+    }
+
+    #navbar.scrolled .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-cta-wrap {
+      flex-shrink: 0;
+    }
+
+    .nav-cta-wrap .btn-ghost {
+      padding: 12px 24px;
+      font-size: 11px;
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      color: rgba(255, 255, 255, 0.90);
+      background: transparent;
+      transition: all 0.38s var(--ease-in-out);
+    }
+
+    .nav-cta-wrap .btn-ghost:hover {
+      border-color: rgba(255, 255, 255, 0.60);
+      background: rgba(255, 255, 255, 0.06);
+      color: #FFFFFF;
+    }
+
+    #navbar.scrolled .nav-cta-wrap .btn-ghost {
+      color: var(--forest-deep);
+      border-color: rgba(184, 146, 74, 0.5);
+    }
+
+    #navbar.scrolled .nav-cta-wrap .btn-ghost:hover {
+      color: var(--forest-deep);
+      border-color: var(--forest-deep);
+      background: rgba(22, 40, 32, 0.04);
+    }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .nav-hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: rgba(255, 255, 255, 0.85);
+      transition: all 0.28s var(--ease-out);
+      border-radius: 2px;
+    }
+
+    #navbar.scrolled .nav-hamburger span {
+      background: var(--ink);
+    }
+
+    .nav-hamburger.open span:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    .nav-hamburger.open span:nth-child(2) {
+      opacity: 0;
+      transform: scaleX(0);
+    }
+
+    .nav-hamburger.open span:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    .nav-backdrop {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(7, 13, 10, 0.50);
+      backdrop-filter: blur(4px);
+      z-index: 998;
+      opacity: 0;
+      transition: opacity 0.28s;
+    }
+
+    .nav-backdrop.visible {
+      display: block;
+      opacity: 1;
+    }
+
+    .nav-drawer {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: min(80vw, 320px);
+      background: var(--forest-deep);
+      z-index: 999;
+      padding: var(--s8) var(--s6) var(--s7);
+      display: flex;
+      flex-direction: column;
+      transform: translateX(100%);
+      transition: transform 0.38s var(--ease-out);
+      overflow-y: auto;
+    }
+
+    .nav-drawer.open {
+      transform: translateX(0);
+    }
+
+    .drawer-links {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s5);
+      margin-top: 100px;
+      flex: 1;
+    }
+
+    .drawer-links a {
+      font-family: var(--serif);
+      font-size: 24px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.85);
+      transition: color 0.2s;
+    }
+
+    .drawer-links a:hover {
+      color: var(--gold);
+    }
+
+    .drawer-cta {
+      margin-top: var(--s7);
+      display: flex;
+      justify-content: center;
+    }
+
+    .drawer-cta .btn-primary {
+      width: 100%;
+      max-width: 240px;
+    }
+
+    /* ══════════════════════════════════════════════════════
+   HERO — composição cinematográfica assimétrica (sem pill)
+   Âncora visual: carimbo vertical no gutter + título com tensão
+   de peso/estilo; credenciais como nota de rodapé editorial na base.
+══════════════════════════════════════════════════════ */
+    .hero {
+      position: relative;
+      min-height: 100svh;
+      overflow: hidden;
+      background-color: var(--forest-deep);
+    }
+
+    .hero-bg-container {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+    }
+
+    .hero-bg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 95% 75%;
+      filter: brightness(0.9) saturate(0.95) contrast(1.05);
+      transform: scale(1.4);
+      transform-origin: 95% 75%;
+      transition: transform var(--dur-cinematic) var(--ease-spring);
+      will-change: transform;
+    }
+
+    /* Overlay cinematográfico refinado: gradiente lateral suave */
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 2;
+      background: linear-gradient(
+        90deg,
+        rgba(14, 31, 24, 0.95) 0%,
+        rgba(14, 31, 24, 0.80) 35%,
+        rgba(14, 31, 24, 0.40) 65%,
+        rgba(14, 31, 24, 0) 100%
+      );
+    }
+
+    .hero-overlay::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(14,31,24,0.4) 0%, transparent 15%, transparent 85%, rgba(14,31,24,0.6) 100%);
+      pointer-events: none;
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 10;
+      width: 100%;
+      max-width: var(--max-content);
+      min-height: 100svh;
+      margin: 0 auto;
+      padding: 96px var(--section-x) clamp(28px, 6vh, 64px);
+      display: grid;
+      grid-template-rows: 1fr auto;
+      align-items: center;
+    }
+
+
+
+    .hero-content {
+      align-self: center;
+      max-width: 760px;
+      /* Empurra a âncora ótica abaixo do centro geométrico — sensação de
+         estar dentro da sala, não de banner centralizado. */
+      padding-top: clamp(16px, 7vh, 88px);
+    }
+
+    /* Headline editorial em coluna */
+    .hero-title {
+      font-family: var(--serif);
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+      margin-bottom: var(--s4);
+      line-height: 1.05;
+    }
+
+    .hero-title .l1 {
+      display: block;
+      font-weight: 300;
+      font-size: clamp(32px, 4vw, 56px);
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: -4px;
+    }
+
+    .hero-title .l2 {
+      display: block;
+      font-weight: 300;
+      font-style: italic;
+      font-size: clamp(52px, 7vw, 92px);
+      letter-spacing: -0.03em;
+      color: #D4C3A3;
+      text-shadow: 0 4px 16px rgba(14, 31, 24, 0.4);
+    }
+
+    .hero-subtitle {
+      font-family: var(--sans);
+      font-size: clamp(16px, 1.2vw, 18px);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.85);
+      max-width: 440px;
+      margin-bottom: var(--s6);
+      line-height: 1.6;
+    }
+
+    .hero-ctas {
+      display: flex;
+      align-items: center;
+      gap: var(--s6);
+    }
+
+    .hero-credentials {
+      align-self: end;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: clamp(20px, 3vw, 40px);
+      padding-top: var(--s5);
+      border-top: none; /* Mais orgânico, menos dashboard */
+    }
+
+    .cred {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 8px;
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: rgba(255, 255, 255, 0.66);
+      transition: color 0.22s var(--ease-out);
+    }
+
+    a.cred:hover {
+      color: rgba(255, 255, 255, 0.95);
+    }
+
+    .cred b {
+      font-family: var(--serif);
+      font-weight: 200;
+      font-style: normal;
+      font-size: 19px;
+      line-height: 1;
+      letter-spacing: 0;
+      color: #FFFFFF;
+    }
+
+    .cred .cred-star {
+      color: var(--gold);
+      font-size: 13px;
+      transform: translateY(-1px);
+    }
+
+    .cred-sep {
+      width: 1px;
+      height: 13px;
+      background: rgba(255, 255, 255, 0.20);
+      flex-shrink: 0;
+    }
+
+
+
+    /* ── HERO mobile — composição editorial à ESQUERDA (não centralizada).
+       Hierarquia própria: l1 recua, l2 domina; credenciais viram coluna
+       enxuta com ticks ouro; CTA primário pill + secundário como text-link. ── */
+    @media (max-width: 600px) {
+      .hero-container {
+        /* Padding generoso à esquerda — o texto respira, não cola na borda. */
+        padding: 100px var(--section-x) clamp(20px, 5vh, 40px);
+        grid-template-rows: 1fr auto;
+      }
+
+      .hero-content {
+        max-width: 100%;
+        padding-top: var(--s4);
+      }
+
+      /* Overlay inteligente para esconder fundo feio no topo */
+      .hero-overlay::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(180deg, rgba(14,31,24,0.95) 0%, rgba(14,31,24,0.7) 25%, transparent 60%);
+        pointer-events: none;
+      }
+
+      .hero-bg-img { 
+        object-position: 100% 100%;
+        transform: scale(1.5);
+        transform-origin: 100% 100%;
+      }
+
+      .hero-title { margin-bottom: var(--s5); }
+
+      .hero-title .l1 {
+        font-size: clamp(22px, 6.5vw, 28px);
+        margin-bottom: 4px;
+      }
+
+      .hero-title .l2 {
+        font-size: clamp(44px, 12vw, 56px);
+        line-height: 0.98;
+      }
+
+      .hero-subtitle {
+        font-size: 15.5px;
+        line-height: 1.65;
+        max-width: 100%;
+        margin-bottom: var(--s6);
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--s5);
+        width: 100%;
+      }
+
+      .hero-ctas .btn-primary {
+        width: auto;
+        min-height: 48px;
+        padding: 0 32px;
+      }
+
+      .hero-ctas .btn-primary {
+        width: 100%;
+        min-height: 52px;
+      }
+
+      .hero-ctas .btn-editorial { padding-left: 2px; }
+
+      /* Credenciais: coluna enxuta, cada item com tick ouro. Sem divisores verticais. */
+      .hero-credentials {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 16px;
+        padding-top: var(--s5);
+        padding-bottom: 24px;
+      }
+
+      .hero-credentials .cred:nth-child(5),
+      .hero-credentials .cred-sep:nth-child(4) {
+        display: none;
+      }
+
+      .cred {
+        padding-left: 0;
+        font-size: 12.5px;
+      }
+
+      .cred::before { display: none; }
+
+      .hero-scroll { display: none; }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   MANIFESTO DE ABERTURA (ex Intro Band) — quote editorial assimétrico
+══════════════════════════════════════════════════════ */
+    .abertura {
+      background: var(--forest-deep);
+      padding: clamp(48px, 6vw, 80px) var(--section-x);
+      border-top: 1px solid rgba(255, 255, 255, 0.05); /* Separação sutil */
+    }
+
+    .abertura-inner {
+      max-width: var(--max-wide);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: clamp(40px, 6vw, 80px);
+      align-items: center;
+    }
+
+    .abertura-quote {
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.2vw, 42px);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.95);
+      line-height: 1.35;
+      letter-spacing: -0.01em;
+      max-width: 840px;
+    }
+
+    .abertura-quote em {
+      color: #D4C3A3;
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .abertura-stats {
+      display: flex;
+      flex-direction: row;
+      gap: clamp(24px, 4vw, 48px);
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      padding-left: clamp(24px, 3vw, 40px);
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .stat-num {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3vw, 36px);
+      font-weight: 300;
+      color: var(--gold-light);
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-family: var(--sans);
+      font-size: 11.5px;
+      font-weight: 400;
+      line-height: 1.4;
+      color: rgba(255, 255, 255, 0.66);
+      max-width: 130px;
+    }
+
+    @media (max-width: 880px) {
+      .abertura-inner {
+        grid-template-columns: 1fr;
+        gap: var(--s5);
+        align-items: start;
+      }
+
+      .abertura-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: var(--s6);
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.12);
+        padding-left: 0;
+        padding-top: var(--s5);
+      }
+      
+      .stat-label { max-width: none; }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   SOBRE — grid assimétrico, abre com lead serif (eyebrow permitido aqui)
+══════════════════════════════════════════════════════ */
+    .sobre {
+      background: var(--canvas);
+      padding: var(--section-y) var(--section-x);
+    }
+
+    .sobre-inner {
+      max-width: var(--max-wide);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 0.82fr 1.18fr;
+      gap: clamp(48px, 7vw, 110px);
+      align-items: center;
+    }
+
+    /* Visual à ESQUERDA, texto à direita — assimetria invertida vs. padrão. */
+    .sobre-visual {
+      position: relative;
+    }
+
+    .sobre-img-main {
+      width: 100%;
+      aspect-ratio: 4/5;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-warm-1);   /* sobre canvas (bege) → sombra quente */
+      position: relative;
+    }
+
+    /* Overlay sutil para disfarçar a placa "SAÍDA" e luz da rua no topo esquerdo */
+    .sobre-img-main::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(190deg, rgba(7, 13, 10, 0.5) 0%, rgba(7, 13, 10, 0.1) 25%, transparent 50%);
+      pointer-events: none;
+    }
+
+    .sobre-img-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 75%; /* Foca estritamente nas poltronas e chão */
+      filter: saturate(0.92) sepia(0.04) contrast(1.02) brightness(0.96);
+      transform: scale(1.22); /* Zoom mais agressivo para cortar margens documentais */
+      transition: transform 1.2s var(--ease-spring);
+    }
+
+    .sobre-img-main:hover img {
+      transform: scale(1.18);
+    }
+
+    .sobre-text {
+      max-width: 600px;
+    }
+
+    .sobre-lead {
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.2vw, 42px);
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.25;
+      letter-spacing: -0.01em;
+      margin-bottom: var(--s5);
+    }
+
+    .sobre-lead em {
+      font-style: italic;
+      color: var(--forest-soft);
+    }
+
+    .sobre-body {
+      font-family: var(--sans);
+      font-size: 16.5px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--ink-mid);
+      margin-bottom: var(--s4);
+    }
+
+    /* Credenciais como byline editorial: itens em versalete ouro, separados por
+       um ponto-médio sutil. Sem pill, sem "✓" — credibilidade, não badge de status. */
+    .sobre-creds {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--s2) var(--s4);
+      margin-bottom: var(--s6);
+    }
+
+    .sobre-creds span {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+    }
+
+    /* Ponto-médio dourado entre credenciais (não antes da primeira). */
+    .sobre-creds span + span::before {
+      content: '·';
+      margin-right: var(--s4);
+      color: var(--gold);
+      opacity: 0.55;
+    }
+
+    @media (max-width: 900px) {
+      .sobre-inner {
+        grid-template-columns: 1fr;
+        gap: var(--s8);
+      }
+
+      .sobre-visual {
+        order: 2; /* Imagem aparece depois da copy no mobile */
+        max-width: 440px;
+      }
+
+      .sobre-img-main {
+        aspect-ratio: 4/4;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   PILARES → MANIFESTO: coluna única + números tipográficos grandes
+══════════════════════════════════════════════════════ */
+    .manifesto {
+      background: var(--canvas-mid);
+      padding: clamp(80px, 10vw, 140px) var(--section-x);
+    }
+
+    .manifesto-inner {
+      max-width: var(--max-narrow);
+      margin: 0 auto;
+    }
+
+    .manifesto-lede {
+      font-family: var(--serif);
+      font-size: clamp(26px, 3.4vw, 42px);
+      font-weight: 300;
+      line-height: 1.28;
+      letter-spacing: -0.01em;
+      color: var(--forest-deep);
+      margin-bottom: clamp(60px, 8vw, 100px);
+      max-width: 760px;
+    }
+
+    .manifesto-lede em {
+      font-style: italic;
+      color: var(--gold-dim);
+    }
+
+    .manifesto-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .principio {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: clamp(24px, 5vw, 64px);
+      align-items: start;
+      padding: var(--s7) 0;
+      border-top: 1px solid rgba(26, 58, 47, 0.12); /* Mais sutil */
+    }
+
+    .principio:last-child {
+      border-bottom: 1px solid rgba(26, 58, 47, 0.12);
+    }
+
+    .principio-num {
+      font-family: var(--serif);
+      font-size: clamp(56px, 8vw, 92px);
+      font-weight: 300;
+      line-height: 0.8;
+      color: rgba(26, 58, 47, 0.25); /* Contraste levemente melhorado */
+      letter-spacing: -0.03em;
+      transition: color 0.45s var(--ease-out);
+    }
+
+    .principio:hover .principio-num {
+      color: rgba(184, 146, 74, 0.5); /* Sem dourado agressivo */
+    }
+
+    .principio-body {
+      max-width: 540px;
+      margin-top: -6px; /* Alinha oticamente com o topo do número */
+    }
+
+    .principio-title {
+      font-family: var(--serif);
+      font-size: clamp(26px, 2.8vw, 34px);
+      font-weight: 300;
+      color: var(--forest-deep);
+      line-height: 1.2;
+      margin-bottom: var(--s3);
+    }
+
+    .principio-title em {
+      font-style: italic;
+      color: var(--gold-dim);
+    }
+
+    .principio-text {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 1.7;
+      color: var(--ink-mid);
+    }
+
+    @media (max-width: 600px) {
+      .principio {
+        grid-template-columns: 1fr;
+        gap: var(--s3);
+      }
+
+      .principio-num {
+        color: rgba(184, 146, 74, 0.5);
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   EQUIPE — cards editoriais: foto full-bleed 2:3, nome sobreposto
+══════════════════════════════════════════════════════ */
+    .equipe {
+      background: var(--canvas);
+      padding: var(--section-y) var(--section-x);
+    }
+
+    .equipe-head {
+      max-width: var(--max-content);
+      margin: 0 auto var(--s9);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: var(--s6);
+      align-items: end;
+    }
+
+    .equipe-title {
+      font-family: var(--serif);
+      font-size: var(--t-h2);
+      font-weight: 300;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+    }
+
+    .equipe-title em {
+      font-style: italic;
+      color: var(--forest-soft);
+    }
+
+    .equipe-intro {
+      font-family: var(--sans);
+      font-size: var(--t-body);
+      font-weight: 300;
+      line-height: 1.65;
+      color: var(--ink-light);
+      max-width: 420px;
+      margin-top: var(--s4);
+    }
+
+    .equipe-stack {
+      max-width: var(--max-wide);
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: clamp(80px, 12vw, 160px);
+    }
+
+    .psy-profile {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: clamp(40px, 6vw, 100px);
+      align-items: center;
+    }
+
+    .psy-profile:nth-child(even) {
+      grid-template-columns: 1.2fr 0.8fr;
+    }
+
+    .psy-profile:nth-child(even) .psy-portrait {
+      order: 2;
+    }
+
+    .psy-portrait {
+      aspect-ratio: 4/5; /* Padronizado para ficar um pouco mais fechado/controlado */
+      border-radius: var(--r-md);
+      overflow: hidden;
+      background: var(--canvas-light);
+      box-shadow: var(--shadow-warm-1);
+      max-width: 420px; /* Impede que fotos muito grandes dominem a composição no desktop */
+      margin: 0 auto;
+    }
+
+    .psy-portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 20%;
+      filter: saturate(0.85) contrast(1.05) brightness(0.98) sepia(0.08); /* Mais neutro/editorial */
+      transition: transform 1.2s var(--ease-spring);
+    }
+    
+    /* Crops específicos para valorizar rostos e cortar fundos/luzes indesejados */
+    .img-isabella { object-position: center 15%; }
+    .img-denise { object-position: center 25%; }
+    .img-juliana { object-position: center 20%; }
+    .img-livia { object-position: center 10%; transform: scale(1.05); } /* Corta mais teto se houver */
+    
+    .psy-profile:hover .psy-portrait .img-livia { transform: scale(1.09); }
+
+    .psy-profile:hover .psy-portrait img {
+      transform: scale(1.04);
+    }
+
+    .psy-content {
+      max-width: 540px;
+      position: relative;
+    }
+    
+    /* Linha editorial sutil unindo o perfil */
+    .psy-content::before {
+      content: '';
+      position: absolute;
+      left: -40px;
+      top: 10px;
+      bottom: 10px;
+      width: 1px;
+      background: linear-gradient(to bottom, transparent, rgba(184, 146, 74, 0.25), transparent);
+    }
+
+    .psy-profile:nth-child(even) .psy-content {
+      margin-left: auto;
+    }
+    
+    .psy-profile:nth-child(even) .psy-content::before {
+      left: auto;
+      right: -40px;
+    }
+
+    .psy-name {
+      font-family: var(--serif);
+      font-size: clamp(32px, 3.5vw, 44px);
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      margin-bottom: var(--s2);
+    }
+
+    .psy-byline {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold-dim);
+      display: block;
+      margin-bottom: var(--s6);
+    }
+
+    .psy-quote {
+      font-family: var(--serif);
+      font-size: clamp(18px, 2.2vw, 24px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--forest-deep);
+      line-height: 1.4;
+      margin-bottom: var(--s5);
+    }
+
+    .psy-bio {
+      font-family: var(--sans);
+      font-size: 16px;
+      font-weight: 300;
+      color: var(--ink-mid);
+      line-height: 1.65;
+      margin-bottom: var(--s5);
+    }
+
+    .psy-focus {
+      font-family: var(--sans);
+      font-size: 11.5px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--forest-mid);
+      margin-bottom: var(--s6);
+      padding-left: 16px;
+      border-left: 1px solid rgba(184, 146, 74, 0.4);
+    }
+
+    .psy-actions {
+      display: flex;
+      align-items: center;
+      gap: var(--s5);
+    }
+
+    .psy-note {
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--ink-ghost);
+    }
+
+    @media (max-width: 900px) {
+      .equipe-head {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: var(--s5);
+      }
+
+      .psy-profile,
+      .psy-profile:nth-child(even) {
+        grid-template-columns: 1fr;
+        gap: var(--s6);
+      }
+      
+      .psy-profile:nth-child(even) .psy-portrait {
+        order: -1;
+      }
+      
+      .psy-profile:nth-child(even) .psy-content {
+        margin-left: 0;
+      }
+      
+      .psy-content::before,
+      .psy-profile:nth-child(even) .psy-content::before {
+        display: none;
+      }
+      
+      .psy-portrait {
+        max-width: 440px;
+        aspect-ratio: 4/5;
+        margin: 0;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   PROCESSO → JORNADA: timeline vertical editorial (não funil)
+══════════════════════════════════════════════════════ */
+    .jornada {
+      background: var(--forest-mid);
+      padding: var(--section-y) var(--section-x);
+    }
+
+    .jornada-inner {
+      max-width: var(--max-narrow);
+      margin: 0 auto;
+    }
+
+    .jornada-open {
+      margin-bottom: var(--s9);
+      max-width: 620px;
+    }
+
+    .jornada-open .section-index {
+      margin-bottom: var(--s5);
+    }
+
+    .jornada-headline {
+      font-family: var(--serif);
+      font-size: clamp(28px, 3.6vw, 46px);
+      font-weight: 300;
+      line-height: 1.22;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+    }
+
+    .jornada-headline em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    .jornada-track {
+      position: relative;
+      padding-left: clamp(40px, 8vw, 84px);
+    }
+
+    /* Linha-da-vida vertical desta seção — eco da assinatura da clínica. */
+    .jornada-track::before {
+      content: '';
+      position: absolute;
+      left: clamp(13px, 2.6vw, 27px);
+      top: 12px;
+      bottom: 12px;
+      width: 1px;
+      background: linear-gradient(to bottom,
+        transparent,
+        rgba(var(--gold-rgb), 0.45) 12%,
+        rgba(var(--gold-rgb), 0.45) 88%,
+        transparent);
+    }
+
+    .etapa {
+      position: relative;
+      padding: var(--s7) 0;
+    }
+
+    .etapa:first-child { padding-top: 0; }
+    .etapa:last-child { padding-bottom: 0; }
+
+    /* Nó na linha + número romano-editorial sobreposto à esquerda. */
+    .etapa-mark {
+      position: absolute;
+      left: calc(clamp(40px, 8vw, 84px) * -1);
+      top: var(--s7);
+      width: clamp(27px, 5.2vw, 55px);
+      display: flex;
+      justify-content: center;
+    }
+
+    .etapa:first-child .etapa-mark { top: 0; }
+
+    .etapa-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: var(--forest-mid);
+      border: 1.5px solid var(--gold);
+      margin-top: 6px;
+      transition: background 0.4s var(--ease-out), transform 0.4s var(--ease-out);
+    }
+
+    .etapa:hover .etapa-dot {
+      background: var(--gold);
+      transform: scale(1.25);
+    }
+
+    .etapa-num {
+      font-family: var(--serif);
+      font-size: clamp(13px, 1.4vw, 15px);
+      font-style: italic;
+      font-weight: 300;
+      color: var(--gold);
+      display: block;
+      margin-bottom: var(--s3);
+      letter-spacing: 0.04em;
+    }
+
+    .etapa-title {
+      font-family: var(--serif);
+      font-size: clamp(22px, 2.4vw, 28px);
+      font-weight: 300;
+      color: #FFFFFF;
+      line-height: 1.2;
+      margin-bottom: var(--s3);
+      letter-spacing: -0.01em;
+    }
+
+    .etapa-text {
+      font-family: var(--sans);
+      font-size: var(--t-body);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.78);
+      line-height: 1.7;
+      max-width: 520px;
+    }
+
+    .jornada-close {
+      margin-top: var(--s9);
+      padding-left: clamp(40px, 8vw, 84px);
+    }
+
+    /* ══════════════════════════════════════════════════════
+   AMBIENTE / GALERIA — Editorial Assimétrico
+══════════════════════════════════════════════════════ */
+    .ambiente {
+      background: var(--canvas-light);
+      padding: var(--section-y) var(--section-x);
+    }
+
+    .ambiente-inner {
+      max-width: var(--max-wide);
+      margin: 0 auto;
+    }
+
+    .ambiente-header {
+      margin-bottom: var(--s8);
+      max-width: 580px;
+    }
+
+    .ambiente-title {
+      font-family: var(--serif);
+      font-size: clamp(32px, 4vw, 48px);
+      font-weight: 300;
+      line-height: 1.1;
+      color: var(--ink);
+      margin-bottom: var(--s4);
+      letter-spacing: -0.01em;
+    }
+
+    .ambiente-title em {
+      font-style: italic;
+      color: var(--forest-soft);
+    }
+
+    .ambiente-desc {
+      font-family: var(--sans);
+      font-size: var(--t-body);
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.65;
+    }
+
+    /* Galeria Editorial Assimétrica */
+    .editorial-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: var(--s5);
+      margin-bottom: clamp(60px, 8vw, 120px);
+      align-items: start;
+    }
+
+    .gallery-main, .gallery-side {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s5);
+    }
+
+    .gallery-cell {
+      position: relative;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      margin: 0;
+      cursor: pointer;
+      background: var(--canvas);
+      /* Tratamento visual premium unificado */
+      box-shadow: 0 4px 24px rgba(0,0,0,0.03);
+    }
+
+    /* main image (Sala de Estar) - aspecto quadrado contido para permitir zoom agressivo no móvel */
+    .gallery-main .gallery-cell {
+      height: auto;
+      aspect-ratio: 1/1;
+    }
+
+    /* side images (Terapia/Recepção) - proporção paisagem */
+    .gallery-side .gallery-cell {
+      aspect-ratio: 4/3;
+    }
+
+    .gallery-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Curadoria: Leve color grading para uniformidade (aquecer + desaturar + silenciar) */
+      filter: sepia(0.08) saturate(0.85) contrast(1.05) brightness(0.98);
+      transition: transform 0.6s var(--ease-out), filter 0.6s;
+    }
+
+    .gallery-cell:hover img {
+      transform: scale(1.03);
+      filter: sepia(0.05) saturate(0.95) contrast(1.05) brightness(1.02);
+    }
+
+    /* Crops extremos de curadoria: removendo AC, persianas, TV e focando em textura e luz */
+    .gc--estar img { 
+      object-position: 30% 80%; /* Foco no sofá/poltrona */
+      transform: scale(1.35); /* Zoom profundo para esconder bagunça lateral */
+    }
+    .gc--estar:hover img { transform: scale(1.38); }
+
+    .gc--terapia img { 
+      object-position: center 60%; /* Foco na mesa/cadeira */
+      transform: scale(1.4); /* Esconde o teto, AC e luminárias excessivas */
+    }
+    .gc--terapia:hover img { transform: scale(1.43); }
+
+    .gc--recepcao img {
+      object-position: center bottom;
+      transform: scale(1.25); /* Elimina o teto da recepção */
+    }
+    .gc--recepcao:hover img { transform: scale(1.28); }
+
+    /* Legendas discretas */
+    .gallery-caption {
+      position: absolute;
+      bottom: var(--s4);
+      left: var(--s4);
+      padding: 5px 12px;
+      background: rgba(251, 248, 242, 0.95);
+      backdrop-filter: blur(8px);
+      border-radius: var(--r-pill);
+      opacity: 0;
+      transform: translateY(4px);
+      transition: all 0.3s var(--ease-out);
+      pointer-events: none;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .gallery-cell:hover .gallery-caption {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .gallery-caption-text {
+      font-family: var(--sans);
+      font-size: 10.5px;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: var(--ink-mid);
+      text-transform: uppercase;
+    }
+
+    /* Cães Terapeutas (Bloco detalhe, pequeno e afetivo) */
+    .caes-block {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      align-items: center;
+      justify-content: space-between;
+      gap: clamp(30px, 4vw, 50px);
+      padding-top: var(--s7);
+      border-top: 1px solid rgba(0,0,0,0.06);
+    }
+
+    .caes-text {
+      max-width: 440px;
+    }
+
+    .caes-title {
+      font-family: var(--serif);
+      font-size: clamp(24px, 3vw, 32px);
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1.15;
+      margin-bottom: var(--s3);
+    }
+
+    .caes-title em {
+      font-style: italic;
+      color: var(--gold-dim);
+    }
+
+    .caes-desc {
+      font-family: var(--sans);
+      font-size: var(--t-body-sm);
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.65;
+    }
+
+    .caes-gallery {
+      display: flex;
+      gap: var(--s3);
+    }
+
+    .caes-cell {
+      width: 140px; /* Redução drástica: detalhe, não galeria principal */
+      height: 180px;
+      aspect-ratio: auto;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      margin: 0;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.02);
+    }
+
+    .caes-cell img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      /* Crop agressivo focado no rosto para não parecer "foto na sala" */
+      object-position: center 25%; 
+      transform: scale(1.4); 
+      filter: sepia(0.08) saturate(0.85) contrast(1.05) brightness(0.98);
+      transition: transform 0.6s var(--ease-out);
+    }
+
+    .caes-cell:hover img {
+      transform: scale(1.45);
+    }
+      height: 1px;
+      background: var(--gold);
+      animation: hint-travel 1.8s var(--ease-in-out) infinite;
+    }
+
+    @keyframes hint-travel {
+      0% { transform: translateX(-14px); }
+      100% { transform: translateX(40px); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .scroll-hint-track::after { animation: none; left: 13px; }
+    }
+
+    @media (max-width: 760px) {
+      .ambiente-header,
+      .caes-header {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: var(--s4);
+      }
+
+      .ambiente-gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   DEPOIMENTOS — coluna única, quotes grandes editoriais
+══════════════════════════════════════════════════════ */
+    .depoimentos {
+      background: var(--canvas);
+      padding: var(--section-y) var(--section-x);
+    }
+
+    .dep-inner {
+      max-width: var(--max-narrow);
+      margin: 0 auto;
+    }
+
+    .dep-top {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s5);
+      margin-bottom: var(--s9);
+    }
+
+    .dep-headline {
+      font-family: var(--serif);
+      font-size: var(--t-h2);
+      font-weight: 300;
+      line-height: 1.08;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      max-width: 460px;
+    }
+
+    .dep-headline em {
+      font-style: italic;
+      color: var(--forest-soft);
+    }
+
+    .dep-google-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s3);
+      padding: 8px 18px;
+      background: var(--canvas-light);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--r-pill);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.22s var(--ease-out), box-shadow 0.22s, border-color 0.22s;
+    }
+
+    .dep-google-badge:hover {
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-warm-1);   /* sobre canvas (bege) → sombra quente */
+      border-color: rgba(var(--gold-rgb), 0.30);
+    }
+
+    .dep-badge-arrow {
+      color: var(--ink-light);
+      transition: transform 0.22s var(--ease-out);
+    }
+
+    .dep-google-badge:hover .dep-badge-arrow {
+      transform: translate(1px, -1px);
+      color: var(--gold-dim);
+    }
+
+    .dep-google-text {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--ink-mid);
+    }
+
+    .dep-stars {
+      font-size: 12px;
+      color: var(--gold);
+      letter-spacing: 2px;
+    }
+
+    .dep-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .dep-item {
+      padding: var(--s8) 0;
+      border-top: 1px solid var(--border-mid);
+    }
+
+    .dep-item:last-child {
+      border-bottom: 1px solid var(--border-mid);
+    }
+
+    /* Alternância de alinhamento → ritmo editorial, não grid uniforme. */
+    .dep-item:nth-child(even) {
+      text-align: right;
+    }
+
+    .dep-item:nth-child(even) .dep-author {
+      flex-direction: row-reverse;
+    }
+
+    .dep-text {
+      font-family: var(--serif);
+      font-size: clamp(21px, 2.6vw, 30px);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--ink);
+      line-height: 1.42;
+      letter-spacing: -0.01em;
+      margin-bottom: var(--s5);
+    }
+
+    .dep-author {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s3);
+    }
+
+    .dep-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--forest-mid);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-family: var(--serif);
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--gold);
+    }
+
+    .dep-name {
+      font-family: var(--sans);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--ink);
+      display: block;
+    }
+
+    .dep-date {
+      font-family: var(--sans);
+      font-size: 11px;
+      color: var(--ink-light);
+      display: block;
+      margin-top: 2px;
+    }
+
+    @media (max-width: 600px) {
+      .dep-item:nth-child(even) {
+        text-align: left;
+      }
+
+      .dep-item:nth-child(even) .dep-author {
+        flex-direction: row;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   CTA / AGENDAR — onboarding emocional (eyebrow permitido aqui)
+══════════════════════════════════════════════════════ */
+    .cta-section {
+      background: var(--forest-deep);
+      padding: var(--section-y) var(--section-x);
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: clamp(40px, 6vw, 100px);
+      align-items: center;
+    }
+
+    .cta-text .t-eyebrow {
+      color: var(--gold);
+    }
+
+    .cta-title {
+      font-family: var(--serif);
+      font-size: clamp(36px, 4.5vw, 56px);
+      font-weight: 300;
+      line-height: 1.10;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+      margin-top: var(--s3);
+      margin-bottom: var(--s5);
+    }
+
+    .cta-title em {
+      color: var(--gold);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    .cta-body {
+      font-family: var(--sans);
+      font-size: var(--t-body);
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.80);
+      line-height: 1.72;
+      max-width: 460px;
+      margin-bottom: var(--s5);
+    }
+
+    .cta-features {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s2);
+    }
+
+    .cta-feat {
+      font-family: var(--sans);
+      font-size: var(--t-caption);
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.72);
+      display: flex;
+      align-items: center;
+      gap: var(--s3);
+    }
+
+    .cta-feat::before {
+      content: '';
+      display: block;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
+    }
+
+    /* Form acolhedor */
+    .cta-form-wrap {
+      background: var(--canvas-light);
+      border-radius: var(--r-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-3);
+      width: 100%;
+      max-width: var(--max-form);
+      margin-left: auto;
+    }
+
+    .cta-form-header {
+      background: var(--canvas);
+      padding: clamp(32px, 5vw, 40px) clamp(32px, 5vw, 48px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .cta-form-title {
+      font-family: var(--serif);
+      font-size: 25px;
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.2;
+      margin-bottom: var(--s2);
+    }
+
+    .cta-form-sub {
+      font-family: var(--sans);
+      font-size: var(--t-body-sm);
+      font-weight: 300;
+      color: var(--ink-mid);
+      line-height: 1.55;
+    }
+
+    .cta-form-body {
+      padding: clamp(24px, 4vw, 32px) clamp(32px, 5vw, 48px) clamp(32px, 5vw, 40px);
+    }
+
+    .form-field {
+      margin-bottom: 28px;
+    }
+
+    /* Label como pergunta humana — não etiqueta fria. */
+    .form-label {
+      font-family: var(--serif);
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: var(--s3);
+      display: block;
+      line-height: 1.4;
+    }
+
+    .form-input,
+    .form-select,
+    .form-textarea {
+      width: 100%;
+      background: var(--white);
+      border: 1.5px solid var(--border-mid);
+      border-radius: var(--r-sm);
+      font-family: var(--sans);
+      font-size: 15px;
+      font-weight: 400;
+      color: var(--ink);
+      padding: 14px 14px;
+      outline: none;
+      transition: border-color 0.22s, box-shadow 0.22s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .form-input,
+    .form-select {
+      height: 50px;
+      padding: 0 14px;
+    }
+
+    .form-input::placeholder,
+    .form-textarea::placeholder {
+      color: var(--ink-ghost);
+      font-weight: 300;
+    }
+
+    .form-textarea {
+      min-height: 96px;
+      resize: vertical;
+      line-height: 1.55;
+    }
+
+    .form-select {
+      color: var(--ink-light);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='none' stroke='%237A7470' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M2 4l4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+      background-size: 12px;
+      padding-right: 36px;
+    }
+
+    .form-input:focus,
+    .form-select:focus,
+    .form-textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(var(--gold-rgb), 0.12);
+    }
+
+    .form-submit {
+      width: 100%;
+      height: 54px;
+      background: var(--gold);
+      color: var(--forest-deep);
+      border: none;
+      border-radius: var(--r-sm);
+      font-family: var(--sans);
+      font-size: var(--t-button);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.10em;
+      cursor: pointer;
+      margin-top: var(--s2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.22s var(--ease-out), filter 0.22s, box-shadow 0.22s;
+      box-shadow: 0 8px 20px rgba(var(--gold-rgb), 0.22);
+    }
+
+    .form-submit:hover {
+      transform: translateY(-1px);
+      filter: brightness(1.06);
+      box-shadow: 0 12px 28px rgba(var(--gold-rgb), 0.28);
+    }
+
+    .form-privacy {
+      text-align: left;
+      font-family: var(--sans);
+      font-size: 12.5px;
+      color: var(--ink-mid);
+      margin-top: 24px;
+      line-height: 1.6;
+    }
+
+    .form-privacy a {
+      color: var(--gold-dim);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Ocultamento contextual do WhatsApp quando o formulário estiver em foco (Hide Contextual Inteligente) */
+    body:has(.cta-form-wrap:focus-within) .wa-float {
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(15px);
+    }
+
+    @media (max-width: 900px) {
+      .cta-section {
+        grid-template-columns: 1fr;
+        gap: var(--s8);
+      }
+
+      .cta-form-wrap {
+        margin: 0 auto;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   LOCALIZAÇÃO — abre com título (sem eyebrow)
+══════════════════════════════════════════════════════ */
+    .localizacao {
+      background: var(--white);
+      padding: var(--section-y) var(--section-x);
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: clamp(60px, 8vw, 100px);
+      align-items: center;
+      max-width: var(--max-wide);
+      margin: 0 auto;
+    }
+
+    .loc-map-box {
+      width: 100%;
+      aspect-ratio: 16/10;
+      border-radius: var(--r-md);
+      overflow: hidden;
+      border: 1px solid rgba(0, 0, 0, 0.05);
+      background: var(--surface-placeholder);
+      box-shadow: var(--shadow-1);
+      position: relative;
+    }
+
+    .loc-map-box iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .loc-open-btn {
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(12px) saturate(180%);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      border-radius: var(--r-pill);
+      padding: 8px 16px;
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--ink);
+      z-index: 4;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.22s;
+    }
+
+    .loc-open-btn:hover {
+      background: var(--white);
+    }
+
+    .loc-title {
+      font-family: var(--serif);
+      font-size: var(--t-h3);
+      font-weight: 300;
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+      color: var(--ink);
+      margin-bottom: var(--s7);
+    }
+
+    .loc-title em {
+      font-style: italic;
+      color: var(--forest-soft);
+    }
+
+    .loc-infos {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s7);
+    }
+
+    .loc-row {
+      display: flex;
+      gap: var(--s4);
+      align-items: flex-start;
+    }
+
+    .loc-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: var(--r-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      transition: transform 0.25s var(--ease-out);
+    }
+
+    .loc-icon-g { background: rgba(26, 58, 47, 0.07); }
+    .loc-icon-a { background: rgba(var(--gold-rgb), 0.10); }
+
+    .loc-row:hover .loc-icon {
+      transform: scale(1.08);
+    }
+
+    .loc-icon svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    .loc-label {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-ghost);
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    .loc-value {
+      font-family: var(--sans);
+      font-size: var(--t-body);
+      font-weight: 400;
+      color: var(--ink);
+      line-height: 1.60;
+      display: block;
+    }
+
+    .loc-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s3);
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--forest-mid);
+      border-bottom: 1.5px solid rgba(26, 58, 47, 0.20);
+      padding-bottom: 3px;
+      text-decoration: none;
+      margin-top: var(--s5);
+      transition: all 0.22s var(--ease-out);
+    }
+
+    .loc-cta:hover {
+      color: var(--gold-dim);
+      border-color: var(--gold-dim);
+    }
+
+    .loc-cta::after {
+      content: '→';
+      font-size: 14px;
+      transition: transform 0.20s var(--ease-out);
+    }
+
+    .loc-cta:hover::after {
+      transform: translateX(3px);
+    }
+
+    @media (max-width: 900px) {
+      .localizacao {
+        grid-template-columns: 1fr;
+        gap: var(--s8);
+      }
+
+      .loc-map-box {
+        aspect-ratio: 4/3;
+        order: -1;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   FOOTER (ornament permitido aqui)
+══════════════════════════════════════════════════════ */
+    footer {
+      background: var(--forest-deep);
+      padding: clamp(60px, 8vw, 100px) var(--section-x) var(--s7);
+    }
+
+    .footer-top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--s6);
+      padding-bottom: var(--s8);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      margin-bottom: var(--s6);
+    }
+
+    .footer-ornament {
+      width: var(--ornament-w);
+      height: var(--ornament-h);
+      background: var(--ornament-color);
+      opacity: var(--ornament-opacity);
+    }
+
+    .footer-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: var(--s4);
+      text-decoration: none;
+    }
+
+    .footer-logo img {
+      height: 52px;
+      width: auto;
+      object-fit: contain;
+      opacity: 0.92;
+    }
+
+    .footer-logo-name {
+      font-family: var(--serif);
+      font-size: 20px;
+      font-weight: 300;
+      color: #FFFFFF;
+      letter-spacing: -0.01em;
+    }
+
+    .footer-logo-sub {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 600;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--gold);
+      /* QA contraste: opacity 0.55 dava ~2.7:1 sobre forest-deep (reprova AA).
+         0.85 sobe para ~4.7:1 mantendo a hierarquia discreta. */
+      opacity: 0.85;
+    }
+
+    .footer-nav {
+      display: flex;
+      gap: clamp(16px, 3vw, 40px);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .footer-nav a {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.55);
+      text-decoration: none;
+      padding: 6px 0;
+      position: relative;
+      transition: color 0.22s;
+    }
+
+    .footer-nav a::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 1px;
+      background: var(--gold);
+      transition: width 0.28s var(--ease-out), left 0.28s var(--ease-out);
+    }
+
+    .footer-nav a:hover {
+      color: #FFFFFF;
+    }
+
+    .footer-nav a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: var(--s4);
+    }
+
+    .soc-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.10);
+      background: rgba(255, 255, 255, 0.02);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.35s var(--ease-out);
+      text-decoration: none;
+    }
+
+    .soc-btn:hover {
+      border-color: var(--gold);
+      background: rgba(var(--gold-rgb), 0.08);
+      transform: translateY(-2px);
+    }
+
+    .soc-btn svg {
+      width: 18px;
+      height: 18px;
+      transition: stroke 0.22s;
+    }
+
+    .soc-btn:hover svg {
+      stroke: var(--gold);
+    }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s5);
+      padding-top: var(--s5);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-copy {
+      font-family: var(--sans);
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.30);
+      line-height: 1.6;
+    }
+
+    .footer-crp {
+      display: flex;
+      gap: var(--s3);
+    }
+
+    .crp-badge {
+      font-family: var(--sans);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.10em;
+      text-transform: uppercase;
+      color: rgba(var(--gold-rgb), 0.60);
+      padding: 5px 12px;
+      border: 1px solid rgba(var(--gold-rgb), 0.20);
+      border-radius: var(--r-pill);
+      background: rgba(var(--gold-rgb), 0.03);
+    }
+
+    @media (max-width: 600px) {
+      .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: var(--s5);
+      }
+
+      .footer-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        gap: 12px 24px;
+      }
+
+      .footer-crp {
+        justify-content: center;
+      }
+    }
+
+    /* ══════════════════════════════════════════════════════
+   LIGHTBOX
+══════════════════════════════════════════════════════ */
+    .lightbox-overlay {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(7, 13, 10, 0.97);
+      backdrop-filter: blur(8px);
+      opacity: 0;
+      transition: opacity 0.35s;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox-overlay.active {
+      display: flex;
+      opacity: 1;
+    }
+
+    .lightbox-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 90vw;
+    }
+
+    .lightbox-content {
+      max-height: 80vh;
+      max-width: 100%;
+      border-radius: var(--r-sm);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      transform: translateY(16px);
+      transition: opacity 0.2s ease, transform 0.35s var(--ease-spring);
+      opacity: 1;
+    }
+
+    .lightbox-overlay.active .lightbox-content {
+      transform: translateY(0);
+    }
+
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.50);
+      font-size: 2.5rem;
+      cursor: pointer;
+      padding: 16px;
+      z-index: 10010;
+      transition: color 0.22s;
+    }
+
+    .lightbox-nav:hover {
+      color: var(--gold);
+    }
+
+    .prev { left: 16px; }
+    .next { right: 16px; }
+
+    .lightbox-info {
+      margin-top: var(--s4);
+      text-align: center;
+    }
+
+    .lightbox-counter {
+      display: block;
+      font-family: var(--sans);
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(255, 255, 255, 0.45);
+      margin-bottom: 4px;
+    }
+
+    .lightbox-caption {
+      font-family: var(--sans);
+      font-size: 14px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: var(--s5);
+      right: var(--s6);
+      color: rgba(255, 255, 255, 0.45);
+      font-size: 28px;
+      cursor: pointer;
+      transition: color 0.22s, transform 0.22s;
+      line-height: 1;
+    }
+
+    .lightbox-close:hover {
+      color: #FFFFFF;
+      transform: rotate(90deg);
+    }
+
+    /* ══════════════════════════════════════════════════════
+   WHATSAPP FLOAT
+══════════════════════════════════════════════════════ */
+    .wa-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 500;
+      display: flex;
+      align-items: center;
+      gap: var(--s3);
+    }
+
+    .wa-tooltip {
+      background: rgba(22, 40, 32, 0.95); /* forest-deep translúcido */
+      backdrop-filter: blur(8px);
+      color: rgba(244, 241, 235, 0.90);
+      font-family: var(--sans);
+      font-size: 11px;
+      font-weight: 500;
+      padding: 6px 12px;
+      border-radius: var(--r-pill);
+      white-space: nowrap;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      opacity: 0;
+      transform: translateX(6px);
+      transition: opacity 0.22s, transform 0.22s;
+      pointer-events: none;
+    }
+
+    .wa-float:hover .wa-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .wa-btn {
+      width: 48px;
+      height: 48px;
+      background: rgba(251, 248, 242, 0.95);
+      backdrop-filter: blur(12px) saturate(180%);
+      -webkit-backdrop-filter: blur(12px) saturate(180%);
+      border: 1px solid var(--border-mid);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-1);
+      text-decoration: none;
+      color: #25D366;
+      transition: transform 0.25s var(--ease-out), box-shadow 0.25s, border-color 0.25s;
+    }
+
+    .wa-btn:hover {
+      transform: scale(1.06);
+      box-shadow: var(--shadow-2);
+      border-color: rgba(37, 211, 102, 0.35);
+    }
+
+    .wa-btn svg {
+      width: 22px;
+      height: 22px;
+      fill: currentColor;
+    }
+
+    /* ══════════════════════════════════════════════════════
+   RESPONSIVE — navbar
+══════════════════════════════════════════════════════ */
+    @media (max-width: 1024px) {
+      .nav-links { display: none; }
+      .nav-cta-wrap .btn-ghost { display: none; }
+      .nav-hamburger { display: flex; }
+    }
+
+    /* ════════════════════════════════════════════════════════════
+       MOBILE ≤600px — refinamentos transversais (hero vive no seu próprio
+       @media acima). Foco: ritmo, toque e coexistência elegante de fixos.
+       ════════════════════════════════════════════════════════════ */
+    @media (max-width: 600px) {
+
+      /* ── AMBIENTE / GALERIA MOBILE ── 
+         Abolindo carrossel para uma composição vertical fluida. 
+         Fotos não podem ser gigantes (usamos aspect ratios contidos). */
+      .editorial-grid {
+        grid-template-columns: 1fr;
+        gap: var(--s4);
+      }
+      .gallery-main .gallery-cell {
+        aspect-ratio: 4/3; /* Aspecto controlado no celular para imagem não ficar gigante */
+      }
+      .caes-block {
+        grid-template-columns: 1fr;
+        gap: var(--s5);
+      }
+      .caes-gallery {
+        gap: var(--s3);
+      }
+      .caes-cell {
+        width: 100%; /* No mobile eles voltam a dividir a largura */
+        flex: 1;
+        height: auto;
+        aspect-ratio: 1/1; /* Quadradas no mobile para não dominar a tela */
+      }
+      .gallery-caption {
+        opacity: 1; /* Legenda sempre visível no touch */
+        transform: translateY(0);
+      }
+
+      /* ── EQUIPE: card compacto — foto menor, texto mais denso (ritmo). ── */
+      .psy-portrait {
+        aspect-ratio: 4/5;
+        max-height: 340px;
+      }
+
+      .psy-portrait img { object-position: center 20%; }
+
+      .psy-body { padding: var(--s4) 0 0; }
+      .psy-quote { font-size: 16px; line-height: 1.5; margin-bottom: var(--s3); }
+      .psy-spec { font-size: 14px; margin-bottom: var(--s3); }
+      .psy-tags { margin-bottom: var(--s4); }
+
+      /* ── JORNADA: timeline mais justa, linha mais perto do texto. ── */
+      .jornada-track { padding-left: 38px; }
+      .etapa-mark { left: -38px; width: 24px; }
+      .etapa { padding: var(--s6) 0; }
+      .jornada-headline { font-size: clamp(26px, 7.5vw, 34px); }
+      .jornada-close { padding-left: 38px; margin-bottom: 40px; } /* Respiro para não disputar espaço com WhatsApp */
+
+      /* ── DEPOIMENTOS: coluna única editorial (não carrossel — nada oculto).
+         Mais respiro entre vozes; quote dimensionada para o toque. ── */
+      .dep-top { flex-direction: column; align-items: flex-start; gap: var(--s5); }
+      .dep-item { padding: var(--s7) 0; }
+      .dep-text { font-size: clamp(20px, 6vw, 25px); line-height: 1.45; }
+
+      /* ── FORMULÁRIO: experiência de toque — labels maiores, campos com
+         respiro, fontes 16px (evita zoom automático no iOS), submit alto. ── */
+      .cta-form-body { 
+        padding: 32px 24px 72px; /* Safe area extra no fundo do card para o WhatsApp float */
+      }
+      .form-field { margin-bottom: 28px; }
+      .form-label { font-size: 17px; line-height: 1.45; }
+      .form-input,
+      .form-select {
+        height: 54px;
+        font-size: 16px;
+      }
+      .form-textarea { min-height: 130px; font-size: 16px; }
+      .form-submit { height: 58px; font-size: 14px; }
+      .cta-form-title { font-size: 23px; }
+      .cta-form-sub { font-size: 14px; }
+
+      /* ── Alvos de toque ≥44px ── */
+      .btn,
+      .drawer-link,
+      .footer-nav a,
+      .nav-hamburger,
+      .drawer-close {
+        min-height: 44px;
+      }
+
+      .footer-nav a,
+      .drawer-link {
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* ── COEXISTÊNCIA WA + LGPD ──
+         Tooltip do WA não faz sentido no toque → some. O banner LGPD ocupa a
+         base inteira (sem reservar canto para o WA); quando ele está visível,
+         o botão de WhatsApp SOBE para acima do banner (seletor de irmão), então
+         a borda inferior nunca tem dois elementos pesados disputando espaço. */
+      .wa-tooltip { display: none; }
+
+      .wa-float { bottom: 16px; right: 16px; }
+
+      .lgpd-banner {
+        left: 12px; right: 12px; bottom: 12px;
+        padding: 12px 16px;
+      }
+      .lgpd-text { font-size: 11px; line-height: 1.4; }
+      .lgpd-btn { 
+        background: transparent; 
+        color: var(--gold-dim); 
+        padding: 6px 12px; 
+        min-height: 36px;
+      }
+
+      .lgpd-banner:not([hidden]) ~ .wa-float {
+        bottom: 100px;
+      }
+    }
+
+    /* ════════════════════════════════════════════════════════════
+       MOBILE-XS ≤380px — ajustes finos para a faixa 320–380.
+       ════════════════════════════════════════════════════════════ */
+    @media (max-width: 380px) {
+      .nav-logo-sub { display: none; }
+
+      .hero-title .l2 { font-size: 40px; }
+      .hero-title .l1 { font-size: 19px; }
+
+      /* Carrossel ocupa quase toda a largura; ainda deixa a próxima espiando. */
+      .gallery-cell { flex-basis: 84vw; }
+      .caes-cell { flex-basis: 68vw; }
+
+      /* Byline de credenciais não quebra feio em telas estreitas. */
+      .sobre-creds { gap: var(--s2) var(--s3); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <a href="#sobre" class="skip-link">Pular para o conteúdo principal</a>
+
+  <!-- ═══════════ CAMADA-ASSINATURA "ÁRVORE DA VIDA" ═══════════ -->
+  <svg class="lifeline" id="lifeline" viewBox="0 0 80 1000" preserveAspectRatio="xMidYMin slice" aria-hidden="true">
+    <path class="lifeline-main" id="lifeline-main" d="M40 0 L40 1000" />
+  </svg>
+
+  <div class="read-ring" id="read-ring" aria-hidden="true">
+    <svg viewBox="0 0 46 46">
+      <circle class="rr-track" cx="23" cy="23" r="20" />
+      <circle class="rr-track-2" cx="23" cy="23" r="15" />
+      <circle class="rr-progress" id="rr-progress" cx="23" cy="23" r="20" />
+    </svg>
+  </div>
+
+  <!-- ═══════════ NAVBAR ═══════════ -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo">
+      <img src="logonova.png" alt="Clínica Árvore da Vida" class="nav-logo-img">
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#sobre">A Clínica</a></li>
+      <li><a href="#equipe">Equipe</a></li>
+      <li><a href="#ambiente">Ambiente</a></li>
+      <li><a href="#localizacao">Localização</a></li>
+    </ul>
+
+    <div class="nav-cta-wrap">
+      <a href="#agendar" class="btn btn-ghost">Agendar Consulta</a>
+    </div>
+
+    <button class="nav-hamburger" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false"
+      aria-controls="nav-drawer">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Drawer -->
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <div class="nav-drawer" id="nav-drawer" aria-hidden="true">
+    <ul class="drawer-links">
+      <li><a href="#sobre" class="drawer-link">A Clínica</a></li>
+      <li><a href="#pilares" class="drawer-link">Abordagem</a></li>
+      <li><a href="#equipe" class="drawer-link">Equipe</a></li>
+      <li><a href="#ambiente" class="drawer-link">Ambiente</a></li>
+      <li><a href="#localizacao" class="drawer-link">Localização</a></li>
+    </ul>
+    <div class="drawer-cta">
+      <a href="#agendar" class="btn btn-primary drawer-link">Agendar Consulta</a>
+    </div>
+  </div>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section class="hero">
+    <div class="hero-bg-container">
+      <img src="main3.jpeg" alt="Sala de terapia acolhedora da Clínica Árvore da Vida em Marília" class="hero-bg-img"
+        fetchpriority="high" decoding="async" id="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <span class="t-eyebrow t-eyebrow--light reveal">Psicologia · Marília, SP</span>
+        <h1 class="hero-title reveal">
+          <span class="l1">Um espaço para</span>
+          <span class="l2">se reencontrar</span>
+        </h1>
+
+        <p class="hero-subtitle reveal">
+          Cuidar da sua mente é um passo importante — e você não precisa fazer isso sozinho. Aqui, você encontra escuta, acolhimento e base científica.
+        </p>
+
+        <div class="hero-ctas reveal">
+          <a href="#agendar" class="btn btn-primary">Agendar consulta</a>
+          <a href="#ambiente" class="btn-editorial btn-editorial--light">Conhecer o espaço</a>
+        </div>
+      </div>
+
+      <!-- Credenciais discretas -->
+      <div class="hero-credentials reveal reveal-d1">
+        <a class="cred" href="https://www.google.com/search?q=Clínica+Árvore+da+Vida+Marília+psicologia"
+          target="_blank" rel="noopener" aria-label="5,0 estrelas nas avaliações do Google">
+          <b>5,0</b> <span class="cred-star" aria-hidden="true">★</span> no Google
+        </a>
+        <span class="cred-sep" aria-hidden="true"></span>
+        <span class="cred"><b>+9</b> anos de prática clínica</span>
+        <span class="cred-sep" aria-hidden="true"></span>
+        <span class="cred">CRP 06 registrado no conselho</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABERTURA (manifesto + números) ═══════════ -->
+  <section class="abertura">
+    <div class="abertura-inner">
+      <p class="abertura-quote reveal">
+        Cuidar da saúde mental é um processo contínuo. Aqui, criamos espaço para que ele aconteça com escuta, sigilo e cuidado — <em>no seu tempo.</em>
+      </p>
+      <div class="abertura-stats reveal reveal-d1">
+        <div class="stat-item">
+          <span class="stat-num" data-count-to="9" data-count-prefix="+">+9</span>
+          <span class="stat-label">Anos de prática clínica integrada</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" data-count-to="4">4</span>
+          <span class="stat-label">Psicólogas dedicadas ao cuidado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SOBRE ═══════════ -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-inner">
+      <div class="sobre-visual reveal">
+        <div class="sobre-img-main">
+          <img src="3.jpeg" alt="Poltronas confortáveis na sala de terapia da Clínica Árvore da Vida" loading="lazy" decoding="async">
+        </div>
+      </div>
+
+      <div class="sobre-text reveal reveal-d1">
+        <span class="t-eyebrow">Sobre a Clínica</span>
+        <h2 class="sobre-lead">
+          Um espaço para cuidar de você <em>com profundidade</em> — onde cada história tem tempo para ser ouvida.
+        </h2>
+        
+        <p class="sobre-body">
+          Acreditamos que cada pessoa carrega sua própria história e singularidade. Com o cuidado certo, é possível ressignificar caminhos, fortalecer emoções e seguir com mais leveza, sempre respeitando o seu tempo em um ambiente de absoluto sigilo.
+        </p>
+        <p class="sobre-body">
+          Nossa clínica, localizada no coração de Marília-SP, é um espaço dedicado ao acolhimento genuíno e à escuta atenta. Todo nosso trabalho é estritamente fundamentado na Terapia Cognitivo-Comportamental (TCC), com base científica, sigilo e responsabilidade clínica em cada etapa do cuidado.
+        </p>
+        
+        <p class="sobre-creds">
+          <span>CRP 06 Registrado</span>
+          <span>CFP</span>
+          <span>TCC Certificado</span>
+        </p>
+        <a href="#agendar" class="btn-editorial">Quero começar meu processo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ MANIFESTO (Princípios) ═══════════ -->
+  <section class="manifesto" id="pilares">
+    <div class="manifesto-inner">
+      <p class="manifesto-lede reveal">
+        Muito além das técnicas, três princípios sustentam nossa clínica — garantindo uma prática ética, segura e <em>focada na sua singularidade.</em>
+      </p>
+
+      <div class="manifesto-list">
+        <div class="principio reveal">
+          <span class="principio-num" aria-hidden="true">01</span>
+          <div class="principio-body">
+            <h3 class="principio-title">Ciência &amp; <em>Ética</em></h3>
+            <p class="principio-text">
+              Seu cuidado é conduzido com base em evidências científicas sólidas e total sigilo. Um acompanhamento responsável, sustentado pela TCC e comprometido com eficácia clínica.
+            </p>
+          </div>
+        </div>
+
+        <div class="principio reveal">
+          <span class="principio-num" aria-hidden="true">02</span>
+          <div class="principio-body">
+            <h3 class="principio-title"><em>Humanização</em></h3>
+            <p class="principio-text">
+              Nossa clínica foi feita para pessoas. Você é ouvido com atenção e respeito genuíno, construindo conosco um ambiente onde pode expressar sua realidade livre de julgamentos.
+            </p>
+          </div>
+        </div>
+
+        <div class="principio reveal">
+          <span class="principio-num" aria-hidden="true">03</span>
+          <div class="principio-body">
+            <h3 class="principio-title">Autonomia &amp; <em>Cuidado</em></h3>
+            <p class="principio-text">
+              O objetivo terapêutico central é o desenvolvimento de recursos próprios. Ajudamos você a ganhar clareza e ferramentas para lidar de forma ativa com suas emoções e escolhas.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ EQUIPE ═══════════ -->
+  <section class="equipe" id="equipe">
+    <div class="equipe-head">
+      <div class="reveal">
+        <h2 class="equipe-title">As mãos por trás<br>do <em>cuidado</em></h2>
+        <p class="equipe-intro">
+          Equipe interdisciplinar qualificada, com formação especializada e compromisso genuíno com o seu
+          desenvolvimento e bem-estar.
+        </p>
+      </div>
+      <a href="#agendar" class="btn-editorial reveal reveal-d1">Agendar com a equipe</a>
+    </div>
+
+    <div class="equipe-stack">
+
+      <!-- Dra. Isabella -->
+      <article class="psy-profile reveal">
+        <figure class="psy-portrait">
+          <img src="dra1.jpeg" class="img-isabella" alt="Dra. Isabella Maldonado Dias" loading="lazy" decoding="async">
+        </figure>
+        <div class="psy-content">
+          <h3 class="psy-name">Dra. Isabella Maldonado Dias</h3>
+          <span class="psy-byline">Psicóloga Clínica &amp; Mestre · CRP 06/142744</span>
+          
+          <p class="psy-quote">“Cada pessoa tem um ritmo próprio — e é nesse ritmo que construímos um processo seguro e no seu tempo.”</p>
+          
+          <p class="psy-bio">
+            Especialista em neurodesenvolvimento, reabilitação e saúde mental. Mestre em Interações Funcionais e Docente universitária com extensa prática clínica focada no cuidado singular de cada paciente.
+          </p>
+          
+          <div class="psy-focus">
+            TCC · Ansiedade · Depressão
+          </div>
+          
+          <div class="psy-actions">
+            <a href="#agendar" class="text-link">Agendar Sessão</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dra. Denise -->
+      <article class="psy-profile reveal">
+        <figure class="psy-portrait">
+          <img src="dra2.jpeg" class="img-denise" alt="Dra. Denise Lais do Nascimento" loading="lazy" decoding="async">
+        </figure>
+        <div class="psy-content">
+          <h3 class="psy-name">Dra. Denise Lais do Nascimento</h3>
+          <span class="psy-byline">Psicóloga Clínica · CRP 06/142754</span>
+          
+          <p class="psy-quote">“A terapia é um espaço de acolhimento — onde você pode ser exatamente quem é, sem julgamentos.”</p>
+          
+          <p class="psy-bio">
+            Dedicada à regulação emocional e reestruturação de pensamentos para promover autonomia, clareza e autocuidado através de um processo empático.
+          </p>
+          
+          <div class="psy-focus">
+            TCC · Regulação Emocional · Saúde Mental
+          </div>
+          
+          <div class="psy-actions">
+            <a href="#agendar" class="text-link">Agendar Sessão</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Dra. Juliana -->
+      <article class="psy-profile reveal">
+        <figure class="psy-portrait">
+          <img src="dr3.jpeg" class="img-juliana" alt="Dra. Juliana Raquel Fachini" loading="lazy" decoding="async">
+        </figure>
+        <div class="psy-content">
+          <h3 class="psy-name">Dra. Juliana Raquel Fachini</h3>
+          <span class="psy-byline">Psicopedagoga · CFEP 2619651</span>
+          
+          <p class="psy-quote">“Cada criança aprende de um jeito diferente — e encontrar esse caminho é o que move meu trabalho.”</p>
+          
+          <p class="psy-bio">
+            Especialista em Educação Inclusiva e suporte psicopedagógico clínico. Focada no desenvolvimento infantil, aprendizagem e acompanhamento humano e direcionado.
+          </p>
+          
+          <div class="psy-focus">
+            TEA · Inclusão · Infantil
+          </div>
+          
+          <div class="psy-actions">
+            <a href="#agendar" class="text-link">Agendar Sessão</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Lívia -->
+      <article class="psy-profile reveal">
+        <figure class="psy-portrait">
+          <img src="livia.jpeg" class="img-livia" alt="Lívia de Oliveira" loading="lazy" decoding="async">
+        </figure>
+        <div class="psy-content">
+          <h3 class="psy-name">Lívia de Oliveira</h3>
+          <span class="psy-byline">Acadêmica de Psicologia · UNIMAR</span>
+          
+          <p class="psy-quote">“Aprender a cuidar começa pela escuta profunda — e cada atendimento é conduzido com rigor ético e acolhimento.”</p>
+          
+          <p class="psy-bio">
+            Prática clínica baseada na ética e nas abordagens contemporâneas da psicologia, com foco exclusivo no desenvolvimento da saúde mental sob rigorosa supervisão clínica.
+          </p>
+          
+          <div class="psy-focus">
+            Atendimento Supervisionado · Acolhimento
+          </div>
+          
+          <div class="psy-actions">
+            <a href="#agendar" class="text-link">Agendar Triagem</a>
+            <span class="psy-note">Atendimento supervisionado</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ JORNADA (ex-Processo) ═══════════ -->
+  <section class="jornada" id="processo">
+    <div class="jornada-inner">
+      <div class="jornada-open reveal">
+        <span class="section-index section-index--light"><span>O caminho</span> · <b>do primeiro contato ao seu progresso</b></span>
+        <h2 class="jornada-headline">
+          Começar a terapia não é um formulário.<br>É uma <em>conversa que respeita o seu tempo.</em>
+        </h2>
+      </div>
+
+      <div class="jornada-track">
+        <div class="etapa reveal">
+          <div class="etapa-mark"><span class="etapa-dot"></span></div>
+          <span class="etapa-num">i.</span>
+          <h3 class="etapa-title">O primeiro contato</h3>
+          <p class="etapa-text">
+            Você dá o primeiro passo pelo WhatsApp ou pelo formulário, com as palavras que tiver. Não existe roteiro certo, e não há pressa.
+          </p>
+        </div>
+
+        <div class="etapa reveal">
+          <div class="etapa-mark"><span class="etapa-dot"></span></div>
+          <span class="etapa-num">ii.</span>
+          <h3 class="etapa-title">A primeira conversa</h3>
+          <p class="etapa-text">
+            Escutamos o seu momento, o que pesa, o que você espera e o que ainda não tem nome. A partir disso, entendemos juntos o que faz sentido.
+          </p>
+        </div>
+
+        <div class="etapa reveal">
+          <div class="etapa-mark"><span class="etapa-dot"></span></div>
+          <span class="etapa-num">iii.</span>
+          <h3 class="etapa-title">O cuidado no seu tempo</h3>
+          <p class="etapa-text">
+            O acompanhamento é construído com responsabilidade clínica, sigilo e respeito à sua singularidade.
+          </p>
+        </div>
+
+        <div class="etapa reveal">
+          <div class="etapa-mark"><span class="etapa-dot"></span></div>
+          <span class="etapa-num">iv.</span>
+          <h3 class="etapa-title">Continuidade</h3>
+          <p class="etapa-text">
+            Cada etapa é conduzida com atenção, clareza e base científica, respeitando o ritmo do seu processo.
+          </p>
+        </div>
+      </div>
+
+      <div class="jornada-close reveal">
+        <a href="#agendar" class="btn-editorial btn-editorial--light">Dar o primeiro passo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ AMBIENTE ═══════════ -->
+  <section class="ambiente" id="ambiente">
+    <div class="ambiente-inner">
+      <div class="ambiente-header reveal">
+        <h2 class="ambiente-title">Cada detalhe foi pensado<br>para você <em>respirar</em></h2>
+        <p class="ambiente-desc">
+          Iluminação natural, mobiliário acolhedor e silêncio cuidado. Um espaço que acolhe antes de qualquer palavra.
+        </p>
+      </div>
+
+      <div class="ambiente-gallery editorial-grid reveal">
+        <div class="gallery-main">
+          <figure class="gallery-cell gc--estar">
+            <img src="1.jpeg" alt="Sala de estar" data-lightbox="true" loading="lazy">
+            <figcaption class="gallery-caption"><span class="gallery-caption-text">Sala de Estar</span></figcaption>
+          </figure>
+        </div>
+        <div class="gallery-side">
+          <figure class="gallery-cell gc--terapia">
+            <img src="main3.jpeg" alt="Sala de terapia individual" data-lightbox="true" loading="lazy">
+            <figcaption class="gallery-caption"><span class="gallery-caption-text">Sala de Terapia</span></figcaption>
+          </figure>
+          <figure class="gallery-cell gc--recepcao">
+            <img src="4.jpeg" alt="Recepção" data-lightbox="true" loading="lazy">
+            <figcaption class="gallery-caption"><span class="gallery-caption-text">Recepção</span></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Cães terapeutas -->
+      <div class="caes-block reveal reveal-d1">
+        <div class="caes-text">
+          <h3 class="caes-title">Cães <em>terapeutas</em></h3>
+          <p class="caes-desc">Bella e Maylla acompanham algumas sessões e ajudam a criar um ambiente mais leve, seguro e afetivo — sempre respeitando o momento de cada paciente.</p>
+        </div>
+        <div class="caes-gallery">
+          <figure class="caes-cell">
+            <img src="cao1.jpeg" alt="Bella, cão terapeuta" data-lightbox="true" loading="lazy">
+          </figure>
+          <figure class="caes-cell">
+            <img src="cao2.jpeg" alt="Maylla, cão terapeuta" data-lightbox="true" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox-overlay" class="lightbox-overlay">
+    <span class="lightbox-close" title="Fechar (Esc)">&times;</span>
+    <button class="lightbox-nav prev" id="lightbox-prev" aria-label="Foto Anterior">&#10094;</button>
+    <button class="lightbox-nav next" id="lightbox-next" aria-label="Próxima Foto">&#10095;</button>
+    <div class="lightbox-wrapper">
+      <img class="lightbox-content" id="lightbox-img" src="" alt="">
+      <div class="lightbox-info">
+        <span id="lightbox-counter" class="lightbox-counter"></span>
+        <div class="lightbox-caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════ DEPOIMENTOS ═══════════ -->
+  <section class="depoimentos" id="depoimentos">
+    <div class="dep-inner">
+      <div class="dep-top">
+        <h2 class="dep-headline reveal">Histórias de <em>acolhimento</em></h2>
+        <a class="dep-google-badge reveal reveal-d1"
+          href="https://www.google.com/search?q=Clínica+Árvore+da+Vida+Marília+psicologia"
+          target="_blank" rel="noopener noreferrer" aria-label="Ver as avaliações da clínica no Google (abre em nova aba)">
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" />
+            <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" />
+            <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" />
+            <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" />
+          </svg>
+          <div class="dep-stars" aria-hidden="true">★★★★★</div>
+          <span class="dep-google-text">Ver no Google</span>
+          <svg class="dep-badge-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true">
+            <path d="M3 9l6-6M4.5 3H9v4.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </div>
+
+      <div class="dep-list">
+        <figure class="dep-item reveal">
+          <blockquote class="dep-text">“Melhor experiência que já tive, me ajudou muito com os profissionais da área.
+            Hoje sou uma pessoa bem melhor por conta das sessões com minha psicóloga Denise. Me sinto acolhida e bem
+            tratada todas as vezes.”</blockquote>
+          <figcaption class="dep-author">
+            <div class="dep-avatar">L</div>
+            <div>
+              <span class="dep-name">Layse Oliveira</span>
+              <span class="dep-date">Paciente · Google Reviews</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="dep-item reveal">
+          <blockquote class="dep-text">“Não tenho palavras para dizer o quanto sou grata à Dra. Isabella. Uma
+            profissional fora do comum, que me ajudou e ainda me ajuda a superar tantas coisas. Atendimento impecável,
+            profissionalismo e dedicação.”</blockquote>
+          <figcaption class="dep-author">
+            <div class="dep-avatar">B</div>
+            <div>
+              <span class="dep-name">Bruna Moro</span>
+              <span class="dep-date">Paciente · Google Reviews</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <figure class="dep-item reveal">
+          <blockquote class="dep-text">“Não fui somente bem recebida, fui acolhida, que é o mais importante. Fui
+            compreendida no olhar, e me senti abraçada em todo tempo. Só tenho a agradecer.”</blockquote>
+          <figcaption class="dep-author">
+            <div class="dep-avatar">C</div>
+            <div>
+              <span class="dep-name">Cristhiani Zarbinatti</span>
+              <span class="dep-date">Mãe de paciente · Google Reviews</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ CTA / AGENDAR ═══════════ -->
+  <section class="cta-section" id="agendar">
+    <div class="cta-text reveal">
+      <span class="t-eyebrow">Primeiro passo</span>
+      <h2 class="cta-title">
+        Quando você se sentir pronto,<br><em>estaremos aqui</em>.
+      </h2>
+      <p class="cta-body">
+        Dar o primeiro passo pode parecer difícil — e tudo bem ir no seu tempo. Escreva com as palavras que tiver; a equipe lê com cuidado e responde com sigilo.
+      </p>
+      <div class="cta-features">
+        <div class="cta-feat">Sigilo e confidencialidade, conforme o Código de Ética do CFP</div>
+        <div class="cta-feat">Sem compromisso — você decide o próximo passo</div>
+        <div class="cta-feat">Atendimento presencial em Marília, SP</div>
+        <div class="cta-feat">Escuta atenta e cuidado individualizado</div>
+      </div>
+    </div>
+
+    <div class="cta-form-wrap reveal reveal-d1">
+      <div class="cta-form-header">
+        <h3 class="cta-form-title">Vamos começar uma conversa</h3>
+        <p class="cta-form-sub">Não precisa ter tudo claro agora. Conte o que quiser — a gente cuida do resto, com sigilo e sem pressa.</p>
+      </div>
+      <div class="cta-form-body">
+        <div class="form-field">
+          <label class="form-label" for="nome">Como você prefere ser chamado(a)?</label>
+          <input class="form-input" type="text" id="nome" placeholder="O nome que soa como você">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="telefone">Qual número posso usar para falar com você?</label>
+          <input class="form-input" type="tel" id="telefone" placeholder="De preferência WhatsApp">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="profissional">Há alguém da equipe com quem gostaria de conversar?</label>
+          <select class="form-select" id="profissional">
+            <option value="">Tudo bem não saber ainda</option>
+            <option value="Dra. Isabella Maldonado Dias">Dra. Isabella Maldonado Dias</option>
+            <option value="Dra. Denise Lais do Nascimento">Dra. Denise Lais do Nascimento</option>
+            <option value="Dra. Juliana Raquel Fachini">Dra. Juliana Raquel Fachini</option>
+            <option value="Lívia de Oliveira">Lívia de Oliveira — triagem supervisionada</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="motivo">O que te traz até aqui? Escreva como quiser.</label>
+          <textarea class="form-textarea" id="motivo"
+            placeholder="Pode ser uma frase, um sentimento ou só “não sei bem por onde começar”. Está tudo bem."></textarea>
+        </div>
+        <button class="form-submit" id="form-submit-btn" onclick="enviarWhatsApp()">
+          Enviar com cuidado
+        </button>
+        <p class="form-privacy">Seus dados são usados apenas para entrar em contato sobre seu atendimento e tratados com sigilo, conforme a LGPD. Não compartilhamos suas informações com terceiros.
+          <br><a href="privacidade.html" class="footer-privacy-link">Política de Privacidade</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ LOCALIZAÇÃO ═══════════ -->
+  <section class="localizacao" id="localizacao">
+    <div class="loc-map-box reveal">
+      <!-- QA: removido style="border:0" inline — já coberto por .loc-map-box iframe no CSS. -->
+      <iframe src="https://www.google.com/maps?q=-22.2231876,-49.9580596&z=17&output=embed" width="100%" height="100%"
+        allowfullscreen="" loading="lazy" title="Localização da Clínica Árvore da Vida">
+      </iframe>
+      <a href="https://maps.google.com/?q=Rua+Guanas+77+Marilia+SP" class="loc-open-btn" target="_blank" rel="noopener">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+          <path d="M6 1L11 6L6 11M11 6H1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+        Abrir no Maps
+      </a>
+    </div>
+
+    <div class="reveal reveal-d1">
+      <h2 class="loc-title">Estamos em<br>Marília – <em>SP</em></h2>
+      <div class="loc-infos">
+        <div class="loc-row">
+          <div class="loc-icon loc-icon-g">
+            <svg viewBox="0 0 18 18" fill="none">
+              <path d="M9 1.5C6.52 1.5 4.5 3.52 4.5 6c0 3.75 4.5 10.5 4.5 10.5S13.5 9.75 13.5 6c0-2.48-2.02-4.5-4.5-4.5z" stroke="#1A3A2F" stroke-width="1.1" />
+              <circle cx="9" cy="6" r="1.8" stroke="#1A3A2F" stroke-width=".9" />
+            </svg>
+          </div>
+          <div>
+            <span class="loc-label">Endereço</span>
+            <span class="loc-value">Rua Guanas, 77 — Bairro Salgado Filho<br>Marília – SP, CEP 17501-000</span>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-icon loc-icon-a">
+            <svg viewBox="0 0 18 18" fill="none">
+              <circle cx="9" cy="9" r="6.5" stroke="#A07830" stroke-width="1" />
+              <path d="M9 5.5v3.8l2.5 1.5" stroke="#A07830" stroke-width="1.1" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div>
+            <span class="loc-label">Horário de Atendimento</span>
+            <span class="loc-value">Segunda a Sexta: 08:00 – 22:00<br>Sábado: 08:00 – 12:00</span>
+          </div>
+        </div>
+        <div class="loc-row">
+          <div class="loc-icon loc-icon-g">
+            <svg viewBox="0 0 18 18" fill="none">
+              <path d="M3 4.5C3 3.67 3.67 3 4.5 3h1.38c.32 0 .6.2.7.5l.87 2.6a.75.75 0 01-.17.78L6.1 8.03a9.95 9.95 0 004.87 4.87l1.15-1.18a.75.75 0 01.78-.17l2.6.87c.3.1.5.38.5.7V14.5c0 .83-.67 1.5-1.5 1.5C6.54 16 2 11.46 2 5.5" stroke="#1A3A2F" stroke-width="1" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div>
+            <span class="loc-label">Contato</span>
+            <span class="loc-value">(14) 99777-5585 · WhatsApp<br>contato@arvoredavida.com.br</span>
+          </div>
+        </div>
+      </div>
+      <a href="https://maps.google.com/?q=Rua+Guanas+77+Marilia+SP" class="loc-cta" target="_blank" rel="noopener">
+        Ver no Google Maps
+      </a>
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <div class="footer-top">
+      <div class="footer-ornament" aria-hidden="true"></div>
+      <a href="#" class="footer-logo">
+        <img src="logo-removebg-preview.png" alt="Logo Clínica Árvore da Vida" loading="lazy" decoding="async"
+          width="40" height="40">
+        <span class="footer-logo-name">Clínica Árvore da Vida</span>
+        <span class="footer-logo-sub">Terapia Cognitivo-Comportamental</span>
+      </a>
+
+      <ul class="footer-nav">
+        <li><a href="#sobre">A Clínica</a></li>
+        <li><a href="#pilares">Abordagem</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#ambiente">Ambiente</a></li>
+        <li><a href="#agendar">Agendar</a></li>
+        <li><a href="#localizacao">Contato</a></li>
+      </ul>
+
+      <div class="footer-social">
+        <a href="#" class="soc-btn" title="Instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(244,241,235,.50)" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <circle cx="12" cy="12" r="5" />
+            <circle cx="17.5" cy="6.5" r="1" fill="rgba(244,241,235,.50)" stroke="none" />
+          </svg>
+        </a>
+        <a href="#" class="soc-btn" title="LinkedIn" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="rgba(244,241,235,.50)" stroke-width="1.5">
+            <rect x="2" y="2" width="20" height="20" rx="3" />
+            <path d="M7 10v7M7 7v.01M12 17v-4c0-1.5.8-3 3-3s3 1.5 3 3v4M12 10v7" stroke-linecap="round" />
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Clínica Árvore da Vida · Marília, SP ·
+        <a href="privacidade.html" class="footer-privacy-link">Política de Privacidade</a></span>
+      <div class="footer-crp">
+        <span class="crp-badge">CRP 06</span>
+        <span class="crp-badge">CFP</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════ BANNER LGPD ═══════════ -->
+  <div class="lgpd-banner" id="lgpd-banner" role="region" aria-label="Aviso de privacidade" hidden>
+    <p class="lgpd-text">
+      Usamos cookies essenciais para garantir a melhor experiência, conforme a LGPD. <a href="privacidade.html">Política de Privacidade</a>
+    </p>
+    <button class="lgpd-btn" id="lgpd-accept">Entendi</button>
+  </div>
+
+  <!-- ═══════════ WHATSAPP ═══════════ -->
+  <div class="wa-float">
+    <span class="wa-tooltip">Fale conosco agora</span>
+    <a href="https://wa.me/5514997775585" class="wa-btn" target="_blank" rel="noopener" title="WhatsApp"
+      aria-label="Contato via WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.117.553 4.103 1.523 5.83L.057 23.852a.5.5 0 00.609.61l6.107-1.458A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-4.99-1.368l-.358-.212-3.713.887.903-3.619-.234-.372A9.818 9.818 0 012.182 12C2.182 6.565 6.565 2.182 12 2.182S21.818 6.565 21.818 12 17.435 21.818 12 21.818z" />
+      </svg>
+    </a>
+  </div>
+
+  <!-- ═══════════ SCRIPTS ═══════════ -->
+  <script>
+    /* ── Navbar scroll ── */
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    }, { passive: true });
+
+    /* ── Banner LGPD ── */
+    (function lgpdBanner() {
+      const banner = document.getElementById('lgpd-banner');
+      const accept = document.getElementById('lgpd-accept');
+      if (!banner || !accept) return;
+      try {
+        if (localStorage.getItem('lgpd-aviso-visto') === '1') return;
+      } catch (_) { /* storage indisponível */ }
+      banner.hidden = false;
+      accept.addEventListener('click', () => {
+        banner.hidden = true;
+        try { localStorage.setItem('lgpd-aviso-visto', '1'); } catch (_) { /* ok */ }
+      });
+    })();
+
+    /* ── Hero Ken Burns ── */
+    window.addEventListener('load', () => {
+      const heroImg = document.getElementById('hero-img');
+      if (heroImg) heroImg.style.transform = 'scale(1.0)';
+    });
+
+    /* ── Mobile drawer ── */
+    const toggle = document.getElementById('nav-toggle');
+    const drawer = document.getElementById('nav-drawer');
+    const backdrop = document.getElementById('nav-backdrop');
+
+    function openDrawer() {
+      drawer.classList.add('open');
+      backdrop.classList.add('visible');
+      toggle.classList.add('open');
+      drawer.setAttribute('aria-hidden', 'false');
+      toggle.setAttribute('aria-expanded', 'true');
+      toggle.setAttribute('aria-label', 'Fechar menu');
+      document.body.style.overflow = 'hidden';
+      toggle.focus();
+    }
+
+    function closeDrawer() {
+      drawer.classList.remove('open');
+      backdrop.classList.remove('visible');
+      toggle.classList.remove('open');
+      drawer.setAttribute('aria-hidden', 'true');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.setAttribute('aria-label', 'Abrir menu');
+      document.body.style.overflow = '';
+      toggle.focus();
+    }
+
+    toggle.addEventListener('click', () => {
+      drawer.classList.contains('open') ? closeDrawer() : openDrawer();
+    });
+
+    backdrop.addEventListener('click', closeDrawer);
+
+    document.querySelectorAll('.drawer-link').forEach(link => {
+      link.addEventListener('click', closeDrawer);
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!drawer.classList.contains('open')) return;
+      if (e.key === 'Escape') { closeDrawer(); return; }
+      if (e.key !== 'Tab') return;
+      const focusables = drawer.querySelectorAll('button, a[href]');
+      if (!focusables.length) return;
+      const first = focusables[0];
+      const last = focusables[focusables.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    });
+
+    /* ── Scroll reveal + count-up ── */
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function countUp(el) {
+      const target = parseInt(el.getAttribute('data-count-to'), 10);
+      const prefix = el.getAttribute('data-count-prefix') || '';
+      if (prefersReducedMotion || isNaN(target)) {
+        el.textContent = prefix + target;
+        return;
+      }
+      const duration = 900;
+      const start = performance.now();
+      function tick(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = p === 1 ? 1 : 1 - Math.pow(2, -10 * p);
+        el.textContent = prefix + Math.round(eased * target);
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+    }
+
+    const revealEls = document.querySelectorAll('.reveal, .reveal-slide');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          e.target.querySelectorAll('[data-count-to]').forEach(countUp);
+          e.target.addEventListener('transitionend', () => {
+            e.target.style.willChange = 'auto';
+          }, { once: true });
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.10, rootMargin: '0px 0px -40px 0px' });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ── Camada-assinatura: linha da vida + anel de leitura ── */
+    (function signatureLayer() {
+      const lifeline = document.getElementById('lifeline');
+      const mainPath = document.getElementById('lifeline-main');
+      const readRing = document.getElementById('read-ring');
+      const rrProgress = document.getElementById('rr-progress');
+      if (!lifeline || !mainPath || !readRing || !rrProgress) return;
+
+      const mainLen = mainPath.getTotalLength();
+      lifeline.style.setProperty('--ll-len', mainLen);
+
+      const rrLen = 2 * Math.PI * 20;
+      readRing.style.setProperty('--rr-len', rrLen.toFixed(1));
+
+      if (prefersReducedMotion) return;
+
+      let ticking = false;
+      function onScroll() {
+        if (ticking) return;
+        ticking = true;
+        requestAnimationFrame(() => {
+          const doc = document.documentElement;
+          const max = doc.scrollHeight - doc.clientHeight;
+          const p = max > 0 ? Math.min(window.scrollY / max, 1) : 0;
+          lifeline.style.setProperty('--draw', p.toFixed(4));
+          readRing.style.setProperty('--read', p.toFixed(4));
+          readRing.classList.toggle('visible', window.scrollY > 400);
+          ticking = false;
+        });
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+      window.addEventListener('resize', onScroll, { passive: true });
+      onScroll();
+    })();
+
+    /* ── Smooth scroll ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href');
+        if (id && id !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(id);
+          if (target) {
+            const y = target.getBoundingClientRect().top + window.scrollY - 72;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        }
+      });
+    });
+
+    /* ── WhatsApp form ── */
+    function enviarWhatsApp() {
+      const nome = document.getElementById('nome').value.trim();
+      const telefone = document.getElementById('telefone').value.trim();
+      const profissional = document.getElementById('profissional').value;
+      const motivo = document.getElementById('motivo').value.trim();
+
+      const mensagem = `Olá! Gostaria de conversar sobre começar a terapia.\n\nNome: ${nome}\nContato: ${telefone}\nProfissional: ${profissional || 'Sem preferência'}\nO que me traz: ${motivo || 'Não informado'}\n\nAguardo retorno, com calma.`;
+      const url = 'https://wa.me/5514997775585?text=' + encodeURIComponent(mensagem);
+      window.open(url, '_blank');
+    }
+
+    /* ── Lightbox ── */
+    document.addEventListener('DOMContentLoaded', () => {
+      const images = Array.from(document.querySelectorAll('[data-lightbox="true"]'));
+      const overlay = document.getElementById('lightbox-overlay');
+      const lboxImg = document.getElementById('lightbox-img');
+      const lboxCap = document.getElementById('lightbox-caption');
+      const lboxCount = document.getElementById('lightbox-counter');
+      const btnNext = document.getElementById('lightbox-next');
+      const btnPrev = document.getElementById('lightbox-prev');
+      const btnClose = document.querySelector('.lightbox-close');
+
+      let currentIndex = 0;
+      let visibleImages = [];
+
+      function getVisible() {
+        return images.filter(img => {
+          const cell = img.closest('.gallery-cell, .caes-cell');
+          return cell && cell.style.display !== 'none';
+        });
+      }
+
+      function updateLightbox() {
+        visibleImages = getVisible();
+        const img = visibleImages[currentIndex];
+        if (!img) return;
+        lboxImg.style.opacity = '0';
+        setTimeout(() => {
+          lboxImg.src = img.src;
+          lboxCap.textContent = img.alt || '';
+          lboxCount.textContent = `${currentIndex + 1} / ${visibleImages.length}`;
+          lboxImg.style.opacity = '1';
+        }, 200);
+      }
+
+      function openLightbox(imgEl) {
+        visibleImages = getVisible();
+        currentIndex = visibleImages.indexOf(imgEl);
+        if (currentIndex === -1) currentIndex = 0;
+        updateLightbox();
+        overlay.classList.add('active');
+        document.body.style.overflow = 'hidden';
+      }
+
+      images.forEach(img => img.addEventListener('click', () => openLightbox(img)));
+
+      function next() {
+        visibleImages = getVisible();
+        if (!visibleImages.length) return;
+        currentIndex = (currentIndex + 1) % visibleImages.length;
+        updateLightbox();
+      }
+
+      function prev() {
+        visibleImages = getVisible();
+        if (!visibleImages.length) return;
+        currentIndex = (currentIndex - 1 + visibleImages.length) % visibleImages.length;
+        updateLightbox();
+      }
+
+      function closeLightbox() {
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+
+      if (btnNext) btnNext.addEventListener('click', e => { e.stopPropagation(); next(); });
+      if (btnPrev) btnPrev.addEventListener('click', e => { e.stopPropagation(); prev(); });
+      if (btnClose) btnClose.addEventListener('click', closeLightbox);
+      overlay.addEventListener('click', e => {
+        if (e.target === overlay) closeLightbox();
+      });
+      document.addEventListener('keydown', e => {
+        if (!overlay.classList.contains('active')) return;
+        if (e.key === 'ArrowRight') next();
+        if (e.key === 'ArrowLeft') prev();
+        if (e.key === 'Escape') closeLightbox();
+      });
+    });
+  </script>
+</body>
+
+</html>

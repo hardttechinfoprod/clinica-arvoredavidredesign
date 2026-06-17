@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página não encontrada — Clínica Árvore da Vida</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#0E1F18">
+  <link rel="icon" type="image/png" href="logo-removebg-preview.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200;0,9..144,300;1,9..144,300&family=Instrument+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --forest-deep: #0E1F18;
+      --canvas-light: #FBF8F2;
+      --gold: #B8924A;
+      --gold-rgb: 184, 146, 74;
+      --serif: 'Fraunces', Georgia, serif;
+      --sans: 'Instrument Sans', system-ui, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      background: var(--forest-deep);
+      color: var(--canvas-light);
+      font-family: var(--sans);
+      font-weight: 300;
+      text-align: center;
+      padding: 24px;
+    }
+
+    a:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+    }
+
+    /* Anéis de crescimento — o motivo da identidade. */
+    .rings {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background-image: radial-gradient(circle at 56% 44%,
+          transparent 0 9px, var(--gold) 9px 10.2px,
+          transparent 10.2px 18px, rgba(var(--gold-rgb), 0.55) 18px 19px,
+          transparent 19px 27px, rgba(var(--gold-rgb), 0.3) 27px 28px,
+          transparent 28px);
+      opacity: 0.8;
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 500;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+
+    h1 {
+      font-family: var(--serif);
+      font-weight: 200;
+      font-size: clamp(32px, 6vw, 52px);
+      line-height: 1.15;
+      max-width: 560px;
+    }
+
+    h1 em {
+      font-style: italic;
+      color: var(--gold);
+    }
+
+    p {
+      color: rgba(251, 248, 242, 0.8);
+      max-width: 420px;
+      line-height: 1.65;
+    }
+
+    .btn {
+      margin-top: 12px;
+      display: inline-block;
+      padding: 14px 32px;
+      border: 1px solid rgba(var(--gold-rgb), 0.6);
+      border-radius: 999px;
+      color: var(--canvas-light);
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: background 0.3s, border-color 0.3s;
+    }
+
+    .btn:hover {
+      background: rgba(var(--gold-rgb), 0.14);
+      border-color: var(--gold);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="rings" aria-hidden="true"></div>
+  <span class="eyebrow">Erro 404</span>
+  <h1>Esta página não existe —<br>mas o seu <em>caminho</em> continua.</h1>
+  <p>O endereço pode ter mudado ou sido digitado de outra forma. Vamos voltar para um lugar seguro.</p>
+  <a class="btn" href="index.html">Voltar ao início</a>
+</body>
+
+</html>
